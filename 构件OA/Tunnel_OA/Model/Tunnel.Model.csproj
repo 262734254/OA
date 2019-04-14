@@ -1,0 +1,179 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{53995DBB-9836-4647-AD22-865884FDEB9E}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Tunnel.Model</AssemblyName>
+    <RootNamespace>Tunnel.Model</RootNamespace>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\TheDebug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CheckList.cs" />
+    <Compile Include="Date_Sys.cs" />
+    <Compile Include="daySec.cs" />
+    <Compile Include="LeaveWord.cs" />
+    <Compile Include="PageBase.cs" />
+    <Compile Include="Tunnel_FilesManage.cs" />
+    <Compile Include="Tunnel_InfoType.cs" />
+    <Compile Include="Tunnel_Message.cs" />
+    <Compile Include="Tunnel_Advice.cs" />
+    <Compile Include="Tunnel_anpai.cs" />
+    <Compile Include="Tunnel_bum.cs" />
+    <Compile Include="Tunnel_bumf.cs" />
+    <Compile Include="Tunnel_byingshe.cs" />
+    <Compile Include="Tunnel_Cfile.cs" />
+    <Compile Include="Tunnel_Chat.cs" />
+    <Compile Include="Tunnel_check.cs" />
+    <Compile Include="Tunnel_CView.cs" />
+    <Compile Include="Tunnel_duty.cs" />
+    <Compile Include="Tunnel_dyingshe.cs" />
+    <Compile Include="Tunnel_exam.cs" />
+    <Compile Include="Tunnel_file.cs" />
+    <Compile Include="Tunnel_flow.cs" />
+    <Compile Include="Tunnel_flowclass.cs" />
+    <Compile Include="Tunnel_form.cs" />
+    <Compile Include="Tunnel_formtype.cs" />
+    <Compile Include="Tunnel_grade.cs" />
+    <Compile Include="Tunnel_Img.cs" />
+    <Compile Include="Tunnel_index.cs" />
+    <Compile Include="Tunnel_information.cs" />
+    <Compile Include="Tunnel_InfoXJB.cs" />
+    <Compile Include="Tunnel_items.cs" />
+    <Compile Include="Tunnel_jiaose.cs" />
+    <Compile Include="Tunnel_kaoqin.cs" />
+    <Compile Include="Tunnel_KaoQinCheck.cs" />
+    <Compile Include="Tunnel_kaosetting.cs" />
+    <Compile Include="Tunnel_log.cs" />
+    <Compile Include="Tunnel_mail.cs" />
+    <Compile Include="Tunnel_meeting.cs" />
+    <Compile Include="Tunnel_menber.cs" />
+    <Compile Include="Tunnel_MingXing.cs" />
+    <Compile Include="Tunnel_ModelType.cs" />
+    <Compile Include="Tunnel_PageMessage.cs" />
+    <Compile Include="Tunnel_Performance.cs" />
+    <Compile Include="Tunnel_Produce.cs" />
+    <Compile Include="Tunnel_Profile.cs" />
+    <Compile Include="Tunnel_project.cs" />
+    <Compile Include="Tunnel_projectlog.cs" />
+    <Compile Include="Tunnel_ProJectMent.cs" />
+    <Compile Include="Tunnel_ProjectReport.cs" />
+    <Compile Include="Tunnel_quanxian.cs" />
+    <Compile Include="Tunnel_ReadCheckList.cs" />
+    <Compile Include="Tunnel_Remind.cs" />
+    <Compile Include="Tunnel_report.cs" />
+    <Compile Include="Tunnel_SelType.cs" />
+    <Compile Include="Tunnel_Standard.cs" />
+    <Compile Include="Tunnel_step.cs" />
+    <Compile Include="Tunnel_uyingshe.cs" />
+    <Compile Include="Tunnel_vannewpaper.cs" />
+    <Compile Include="Tunnel_viewTable.cs" />
+    <Compile Include="Tunnel_Vote.cs" />
+    <Compile Include="Tunnel_Votei.cs" />
+    <Compile Include="Tunnel_VoteRe.cs" />
+    <Compile Include="Tunnel_weekplan.cs" />
+    <Compile Include="Tunnel_weekstate.cs" />
+    <Compile Include="Tunnel_work.cs" />
+    <Compile Include="Tunnel_workplan.cs" />
+    <Compile Include="Tunnel_xjbType.cs" />
+    <Compile Include="Tunnel_yingshe.cs" />
+    <Compile Include="VoteLog.cs" />
+    <Compile Include="Vote_Config.cs" />
+    <Compile Include="Vote_Info.cs" />
+    <Compile Include="WeekList.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

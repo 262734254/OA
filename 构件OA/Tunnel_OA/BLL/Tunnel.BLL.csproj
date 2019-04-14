@@ -1,0 +1,212 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{38D7AA58-C95B-449B-86C6-A8073A56E11F}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Tunnel.BLL</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Tunnel.BLL</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\TheDebug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.6.0.0, Culture=neutral, PublicKeyToken=1b03e6acf1164f73">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Web\bin\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="LTP.Common, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Web\bin\LTP.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="Tunnel.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Web\bin\Tunnel.Common.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\MTCPager\Methods.cs" />
+    <Compile Include="Controls\MTCPager\MTCPager.cs" />
+    <Compile Include="Controls\MTCPager\PageIndexType.cs" />
+    <Compile Include="Controls\PagerSetting\Enum.cs" />
+    <Compile Include="Controls\PagerSetting\PageJump.cs" />
+    <Compile Include="Controls\PagerSetting\Properties.cs" />
+    <Compile Include="Date_Sys.cs" />
+    <Compile Include="HttpModule.cs" />
+    <Compile Include="LeaveWord.cs" />
+    <Compile Include="Permission.cs" />
+    <Compile Include="SelType.cs" />
+    <Compile Include="Systemtime.cs" />
+    <Compile Include="Tunnel_Advice.cs" />
+    <Compile Include="Tunnel_anpai.cs" />
+    <Compile Include="Tunnel_bum.cs" />
+    <Compile Include="Tunnel_bumf.cs" />
+    <Compile Include="Tunnel_byingshe.cs" />
+    <Compile Include="Tunnel_Cfile.cs" />
+    <Compile Include="Tunnel_Chat.cs" />
+    <Compile Include="Tunnel_check.cs" />
+    <Compile Include="Tunnel_CView.cs" />
+    <Compile Include="Tunnel_duty.cs" />
+    <Compile Include="Tunnel_dyingshe.cs" />
+    <Compile Include="Tunnel_exam.cs" />
+    <Compile Include="Tunnel_file.cs" />
+    <Compile Include="Tunnel_FilesManage.cs" />
+    <Compile Include="Tunnel_flow.cs" />
+    <Compile Include="Tunnel_flowclass.cs" />
+    <Compile Include="Tunnel_form.cs" />
+    <Compile Include="Tunnel_formtype.cs" />
+    <Compile Include="Tunnel_grade.cs" />
+    <Compile Include="Tunnel_Img.cs" />
+    <Compile Include="Tunnel_Index.cs" />
+    <Compile Include="Tunnel_InfoItem.cs" />
+    <Compile Include="Tunnel_information.cs" />
+    <Compile Include="Tunnel_InfoType.cs" />
+    <Compile Include="Tunnel_InfoXJB.cs" />
+    <Compile Include="Tunnel_items.cs" />
+    <Compile Include="Tunnel_jiaose.cs" />
+    <Compile Include="Tunnel_kaoqin.cs" />
+    <Compile Include="Tunnel_KaoQinCheck.cs" />
+    <Compile Include="Tunnel_kaosetting.cs" />
+    <Compile Include="Tunnel_log.cs" />
+    <Compile Include="Tunnel_mail.cs" />
+    <Compile Include="Tunnel_meeting.cs" />
+    <Compile Include="Tunnel_menber.cs" />
+    <Compile Include="Tunnel_Message.cs" />
+    <Compile Include="Tunnel_MingXing.cs" />
+    <Compile Include="Tunnel_ModelType.cs" />
+    <Compile Include="Tunnel_PageMessage.cs" />
+    <Compile Include="Tunnel_Performance.cs" />
+    <Compile Include="Tunnel_Produce.cs" />
+    <Compile Include="Tunnel_Profile.cs" />
+    <Compile Include="Tunnel_project.cs" />
+    <Compile Include="Tunnel_projectlog.cs" />
+    <Compile Include="Tunnel_ProJectMent.cs" />
+    <Compile Include="Tunnel_ProjectReport.cs" />
+    <Compile Include="Tunnel_quanxian.cs" />
+    <Compile Include="Tunnel_Remind.cs" />
+    <Compile Include="Tunnel_report.cs" />
+    <Compile Include="Tunnel_Standard.cs" />
+    <Compile Include="Tunnel_step.cs" />
+    <Compile Include="Tunnel_uyingshe.cs" />
+    <Compile Include="Tunnel_vannewpaper.cs" />
+    <Compile Include="Tunnel_Vote.cs" />
+    <Compile Include="Tunnel_Votei.cs" />
+    <Compile Include="Tunnel_VoteRe.cs" />
+    <Compile Include="Tunnel_weekplan.cs" />
+    <Compile Include="Tunnel_weekstate.cs" />
+    <Compile Include="Tunnel_work.cs" />
+    <Compile Include="Tunnel_workplan.cs" />
+    <Compile Include="Tunnel_xjbType.cs" />
+    <Compile Include="Tunnel_yingshe.cs" />
+    <Compile Include="UserLogin.cs" />
+    <Compile Include="VoteLog.cs" />
+    <Compile Include="Vote_Config.cs" />
+    <Compile Include="Vote_Info.cs" />
+    <Compile Include="ZipOption.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAL\Tunnel.DAL.csproj">
+      <Project>{9FE00521-3A8B-42B1-814E-585E99407B2E}</Project>
+      <Name>Tunnel.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DBUtility\Tunnel.Data.csproj">
+      <Project>{0988C62E-247F-471F-A183-DB509C7A3839}</Project>
+      <Name>Tunnel.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Tunnel.Model.csproj">
+      <Project>{53995DBB-9836-4647-AD22-865884FDEB9E}</Project>
+      <Name>Tunnel.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

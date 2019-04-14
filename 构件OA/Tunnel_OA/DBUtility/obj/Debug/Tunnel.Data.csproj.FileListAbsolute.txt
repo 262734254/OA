@@ -1,0 +1,10 @@
+E:\OA\Tunnel_OA\TheDebug\Tunnel.DBUtility.dll
+E:\OA\Tunnel_OA\TheDebug\Tunnel.DBUtility.pdb
+E:\OA\Tunnel_OA\DBUtility\obj\Debug\ResolveAssemblyReference.cache
+E:\OA\Tunnel_OA\DBUtility\obj\Debug\Tunnel.DBUtility.dll
+E:\OA\Tunnel_OA\DBUtility\obj\Debug\Tunnel.DBUtility.pdb
+E:\构件OA\Tunnel_OA\TheDebug\Tunnel.DBUtility.dll
+E:\构件OA\Tunnel_OA\TheDebug\Tunnel.DBUtility.pdb
+E:\构件OA\Tunnel_OA\DBUtility\obj\Debug\ResolveAssemblyReference.cache
+E:\构件OA\Tunnel_OA\DBUtility\obj\Debug\Tunnel.DBUtility.dll
+E:\构件OA\Tunnel_OA\DBUtility\obj\Debug\Tunnel.DBUtility.pdb

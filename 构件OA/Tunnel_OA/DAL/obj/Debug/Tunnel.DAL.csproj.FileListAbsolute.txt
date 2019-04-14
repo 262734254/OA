@@ -1,0 +1,10 @@
+E:\OA\Tunnel_OA\TheDebug\Tunnel.DAL.dll
+E:\OA\Tunnel_OA\TheDebug\Tunnel.DAL.pdb
+E:\OA\Tunnel_OA\DAL\obj\Debug\ResolveAssemblyReference.cache
+E:\OA\Tunnel_OA\DAL\obj\Debug\Tunnel.DAL.dll
+E:\OA\Tunnel_OA\DAL\obj\Debug\Tunnel.DAL.pdb
+E:\构件OA\Tunnel_OA\TheDebug\Tunnel.DAL.dll
+E:\构件OA\Tunnel_OA\TheDebug\Tunnel.DAL.pdb
+E:\构件OA\Tunnel_OA\DAL\obj\Debug\ResolveAssemblyReference.cache
+E:\构件OA\Tunnel_OA\DAL\obj\Debug\Tunnel.DAL.dll
+E:\构件OA\Tunnel_OA\DAL\obj\Debug\Tunnel.DAL.pdb

@@ -1,0 +1,66 @@
+<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" id="tablelist">
+                                <tr>
+                                    <td width="86" height="28" align="center" id="td1aqgl" class="toptd" onclick="showclass(this,1,'aqgl')">
+                                        即时报表汇总
+                                    </td>
+                                    <td rowspan="7" valign="top" align="left">
+                               
+                                    </td>
+                                </tr>
+                                <tr align="center">
+                                    <td height="28" class="tds" id="td2aqgl" onclick="showclass(this,2,'aqgl')">
+                                        定期报表汇总
+                                    </td>
+                                </tr>
+                                <tr align="center">
+                                    <td height="28" class="tds" id="td3aqgl" onclick="showclass(this,3,'aqgl')">
+                                        安1 文件
+                                    </td>
+                                </tr>
+                                <tr align="center">
+                                    <td height="28" class="tds" id="td4aqgl" onclick="showclass(this,4,'aqgl')">
+                                        安2 策划
+                                    </td>
+                                </tr>
+                                <tr align="center">
+                                    <td height="28" class="tds" id="td5aqgl" onclick="showclass(this,5,'aqgl')">
+                                        安3 实施
+                                    </td>
+                                </tr>
+                                <tr align="center">
+                                    <td height="28" class="tds" id="td6aqgl" onclick="showclass(this,6,'aqgl')">
+                                        安4 检查和改进
+                                    </td>
+                                </tr>
+                                <tr align="center">
+                                    <td height="" class="tds" id="td7aqgl" onclick="showclass(this,7,'aqgl')">
+                                        其他文件
+                                    </td>
+                                </tr>
+                            </table>
+
+
+
+
+<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" id="tablelist">
+                                <tr>
+                                    <td width="86" height="68" align="center" id="td1gcgk" class="toptd" onclick="showclass(this,1,'gcgk',3)">
+                                        即时报表汇总
+                                    </td>
+                                    <td rowspan="7" valign="top" align="left">
+                                        
+                                    </td>
+                                </tr>
+                                <tr align="center">
+                                    <td height="68" class="tds" id="td2gcgk" onclick="showclass(this,2,'gcgk',3)">
+                                        定期报表汇总
+                                    </td>
+                                </tr>
+                                <tr align="center">
+                                    <td height="68" class="tds" id="td3gcgk" onclick="showclass(this,3,'gcgk',3)">
+                                        其他文件
+                                    </td>
+                                </tr>
+                            </table>
+
+

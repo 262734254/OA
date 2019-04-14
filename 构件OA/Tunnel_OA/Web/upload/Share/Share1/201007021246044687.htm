@@ -1,0 +1,184 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0041)http://www.51cto.com/specbook/14/3264.htm -->
+<HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=gb2312"><LINK 
+href="ASP.net画图.files/dzs_cs.css" type=text/css rel=stylesheet>
+<META content="MSHTML 6.00.2900.5969" name=GENERATOR></HEAD>
+<BODY>
+<TABLE cellSpacing=0 cellPadding=0 width="96%" align=center border=0>
+  <TBODY>
+  <TR>
+    <TD>&nbsp;</TD></TR>
+  <TR>
+    <TD class=d_font3 vAlign=bottom align=middle 
+  height=24>ASP.NET画图全攻略（上）</TD></TR>
+  <TR>
+    <TD bgColor=#e3e3e3 height=3></TD></TR>
+  <TR>
+    <TD>&nbsp;</TD></TR>
+  <TR>
+    <TD class=d_font4>
+      <P>本文代码是基于Beta2开发&nbsp;<BR>&nbsp;&nbsp; 
+      <BR>越来越多的Web应用需要使用图表来进行数据显示和分析。例如：投票结果显示，公司生产情况统计图显示分析等等。利用图表来显示数据，具有直观，清晰等优点。</P>
+      <P>传统的ASP技术是不支持画图表的，那么就不得不利用Active X或者Java 
+      applets来实现这个功能。新近出现的ASP.NET解决了这个问题，只要利用ASP.NET中关于图形显示的类，就可以画出丰富，动态的图表。本文将要讲述如何利用ASP.NET技术结合ADO.NET技术画条形图和饼图。&nbsp;</P>
+      <P>首先建立一个c#的类库。 
+      <BR>打开vs.net，建立一个名为Insight_cs.WebCharts新的类库工程，将解决方案的名称改为Insight，将Class.cs文件名改为Insight_cs.WebCharts.cs，最后打开Insight_cs.WebCharts.cs文件。其中代码如下： 
+      <BR>&nbsp;&nbsp;/*自定义类，通过输入不同的参数，这些类可以画不同的图形 */ <BR>&nbsp;&nbsp; 
+      <BR>&nbsp;&nbsp;using System; <BR>&nbsp;&nbsp;using System.IO;//用于文件存取 
+      <BR>&nbsp;&nbsp;using System.Data;//用于数据访问 <BR>&nbsp;&nbsp;using 
+      System.Drawing;//提供画GDI+图形的基本功能 <BR>&nbsp;&nbsp;using 
+      System.Drawing.Text;//提供画GDI+图形的高级功能 <BR>&nbsp;&nbsp;using 
+      System.Drawing.Drawing2D;//提供画高级二维，矢量图形功能 <BR>&nbsp;&nbsp;using 
+      System.Drawing.Imaging;//提供画GDI+图形的高级功能 <BR>&nbsp;&nbsp;namespace 
+      Insight_cs.WebCharts <BR>&nbsp;&nbsp;{ <BR>&nbsp;&nbsp; public class 
+      PieChart <BR>&nbsp;&nbsp; { <BR>&nbsp;&nbsp; public PieChart() 
+      <BR>&nbsp;&nbsp; { <BR>&nbsp;&nbsp; } <BR>&nbsp;&nbsp; public void 
+      Render(string title, string subTitle, int width, int height, DataSet 
+      chartData, Stream target) <BR>&nbsp;&nbsp; { <BR>&nbsp;&nbsp; const int 
+      SIDE_LENGTH = 400; <BR>&nbsp;&nbsp; const int PIE_DIAMETER = 200; 
+      <BR>&nbsp;&nbsp; DataTable dt = chartData.Tables[0]; <BR>&nbsp;&nbsp; 
+      <BR>&nbsp;&nbsp; //通过输入参数，取得饼图中的总基数 <BR>&nbsp;&nbsp; float sumData = 0; 
+      <BR>&nbsp;&nbsp; foreach(DataRow dr in dt.Rows) <BR>&nbsp;&nbsp; { 
+      <BR>&nbsp;&nbsp; sumData += Convert.ToSingle(dr[1]); <BR>&nbsp;&nbsp; } 
+      <BR>&nbsp;&nbsp; //产生一个image对象，并由此产生一个Graphics对象 <BR>&nbsp;&nbsp; Bitmap 
+      bm = new Bitmap(width,height); <BR>&nbsp;&nbsp; Graphics g = 
+      Graphics.FromImage(bm); <BR>&nbsp;&nbsp; //设置对象g的属性 <BR>&nbsp;&nbsp; 
+      g.ScaleTransform((Convert.ToSingle(width))/SIDE_LENGTH,(Convert.ToSingle(height))/SIDE_LENGTH); 
+      <BR>&nbsp;&nbsp; g.SmoothingMode = SmoothingMode.Default; <BR>&nbsp;&nbsp; 
+      g.TextRenderingHint = TextRenderingHint.AntiAlias; <BR>&nbsp;&nbsp; 
+      <BR>&nbsp;&nbsp; //画布和边的设定 <BR>&nbsp;&nbsp; g.Clear(Color.White); 
+      <BR>&nbsp;&nbsp; 
+      g.DrawRectangle(Pens.Black,0,0,SIDE_LENGTH-1,SIDE_LENGTH-1); 
+      <BR>&nbsp;&nbsp; //画饼图标题 <BR>&nbsp;&nbsp; g.DrawString(title,new 
+      Font("Tahoma",24),Brushes.Black,new PointF(5,5)); <BR>&nbsp;&nbsp; 
+      //画饼图的图例 <BR>&nbsp;&nbsp; g.DrawString(subTitle,new 
+      Font("Tahoma",14),Brushes.Black,new PointF(7,35)); <BR>&nbsp;&nbsp; //画饼图 
+      <BR>&nbsp;&nbsp; float curAngle = 0; <BR>&nbsp;&nbsp; float totalAngle = 
+      0; <BR>&nbsp;&nbsp; for(int i=0;i&lt;dt.Rows.Count;i++) <BR>&nbsp;&nbsp; { 
+      <BR>&nbsp;&nbsp; curAngle = Convert.ToSingle(dt.Rows[i][1]) / sumData * 
+      360; <BR>&nbsp;&nbsp; <BR>&nbsp;&nbsp; g.FillPie(new 
+      SolidBrush(ChartUtil.GetChartItemColor(i)),100,65,PIE_DIAMETER,PIE_DIAMETER,totalAngle,curAngle); 
+      <BR>&nbsp;&nbsp; 
+      g.DrawPie(Pens.Black,100,65,PIE_DIAMETER,PIE_DIAMETER,totalAngle,curAngle); 
+      <BR>&nbsp;&nbsp; totalAngle += curAngle; <BR>&nbsp;&nbsp; } 
+      <BR>&nbsp;&nbsp; //画图例框及其文字 <BR>&nbsp;&nbsp; 
+      g.DrawRectangle(Pens.Black,200,300,199,99); <BR>&nbsp;&nbsp; 
+      g.DrawString("Legend",new 
+      Font("Tahoma",12,FontStyle.Bold),Brushes.Black,new PointF(200,300)); 
+      <BR>&nbsp;&nbsp; <BR>&nbsp;&nbsp; //画图例各项 <BR>&nbsp;&nbsp; PointF 
+      boxOrigin = new PointF(210,330); <BR>&nbsp;&nbsp; PointF textOrigin = new 
+      PointF(235,326); <BR>&nbsp;&nbsp; float percent = 0; <BR>&nbsp;&nbsp; 
+      for(int i=0;i&lt;dt.Rows.Count;i++) <BR>&nbsp;&nbsp; { <BR>&nbsp;&nbsp; 
+      g.FillRectangle(new 
+      SolidBrush(ChartUtil.GetChartItemColor(i)),boxOrigin.X,boxOrigin.Y,20,10); 
+      <BR>&nbsp;&nbsp; 
+      g.DrawRectangle(Pens.Black,boxOrigin.X,boxOrigin.Y,20,10); 
+      <BR>&nbsp;&nbsp; percent = Convert.ToSingle(dt.Rows[i][1]) / sumData * 
+      100; <BR>&nbsp;&nbsp; g.DrawString(dt.Rows[i][0].ToString() + " - " + 
+      dt.Rows[i][1].ToString() + " (" + percent.ToString("0") + "%)",new 
+      Font("Tahoma",10),Brushes.Black,textOrigin); <BR>&nbsp;&nbsp; boxOrigin.Y 
+      += 15; <BR>&nbsp;&nbsp; textOrigin.Y += 15; <BR>&nbsp;&nbsp; } 
+      <BR>&nbsp;&nbsp; //通过Response.OutputStream，将图形的内容发送到浏览器 <BR>&nbsp;&nbsp; 
+      bm.Save(target, ImageFormat.Gif); <BR>&nbsp;&nbsp; //回收资源 <BR>&nbsp;&nbsp; 
+      bm.Dispose(); <BR>&nbsp;&nbsp; g.Dispose(); <BR>&nbsp;&nbsp; } 
+      <BR>&nbsp;&nbsp; } <BR>&nbsp;&nbsp; <BR>&nbsp;&nbsp;//画条形图 
+      <BR>&nbsp;&nbsp; public class BarChart <BR>&nbsp;&nbsp; { <BR>&nbsp;&nbsp; 
+      public BarChart() <BR>&nbsp;&nbsp; { <BR>&nbsp;&nbsp; } <BR>&nbsp;&nbsp; 
+      public void Render(string title, string subTitle, int width, int height, 
+      DataSet chartData, Stream target) <BR>&nbsp;&nbsp; { <BR>&nbsp;&nbsp; 
+      const int SIDE_LENGTH = 400; <BR>&nbsp;&nbsp; const int CHART_TOP = 75; 
+      <BR>&nbsp;&nbsp; const int CHART_HEIGHT = 200; <BR>&nbsp;&nbsp; const int 
+      CHART_LEFT = 50; <BR>&nbsp;&nbsp; const int CHART_WIDTH = 300; 
+      <BR>&nbsp;&nbsp; DataTable dt = chartData.Tables[0]; <BR>&nbsp;&nbsp; 
+      <BR>&nbsp;&nbsp; //计算最高的点 <BR>&nbsp;&nbsp; float highPoint = 0; 
+      <BR>&nbsp;&nbsp; foreach(DataRow dr in dt.Rows) <BR>&nbsp;&nbsp; { 
+      <BR>&nbsp;&nbsp; if(highPoint&lt;Convert.ToSingle(dr[1])) <BR>&nbsp;&nbsp; 
+      { <BR>&nbsp;&nbsp; highPoint = Convert.ToSingle(dr[1]); <BR>&nbsp;&nbsp; } 
+      <BR>&nbsp;&nbsp; } <BR>&nbsp;&nbsp; //建立一个Graphics对象实例 <BR>&nbsp;&nbsp; 
+      Bitmap bm = new Bitmap(width,height); <BR>&nbsp;&nbsp; Graphics g = 
+      Graphics.FromImage(bm); <BR>&nbsp;&nbsp; //设置条图图形和文字属性 <BR>&nbsp;&nbsp; 
+      g.ScaleTransform((Convert.ToSingle(width))/SIDE_LENGTH,(Convert.ToSingle(height))/SIDE_LENGTH); 
+      <BR>&nbsp;&nbsp; g.SmoothingMode = SmoothingMode.Default; <BR>&nbsp;&nbsp; 
+      g.TextRenderingHint = TextRenderingHint.AntiAlias; <BR>&nbsp;&nbsp; 
+      <BR>&nbsp;&nbsp; //设定画布和边 <BR>&nbsp;&nbsp; g.Clear(Color.White); 
+      <BR>&nbsp;&nbsp; 
+      g.DrawRectangle(Pens.Black,0,0,SIDE_LENGTH-1,SIDE_LENGTH-1); 
+      <BR>&nbsp;&nbsp; //画大标题 <BR>&nbsp;&nbsp; g.DrawString(title,new 
+      Font("Tahoma",24),Brushes.Black,new PointF(5,5)); <BR>&nbsp;&nbsp; //画小标题 
+      <BR>&nbsp;&nbsp; g.DrawString(subTitle,new 
+      Font("Tahoma",14),Brushes.Black,new PointF(7,35)); <BR>&nbsp;&nbsp; //画条形图 
+      <BR>&nbsp;&nbsp; float barWidth = CHART_WIDTH / (dt.Rows.Count * 2); 
+      <BR>&nbsp;&nbsp; PointF barOrigin = new PointF(CHART_LEFT + (barWidth / 
+      2),0); <BR>&nbsp;&nbsp; float barHeight = dt.Rows.Count; <BR>&nbsp;&nbsp; 
+      for(int i=0;i&lt;dt.Rows.Count;i++) <BR>&nbsp;&nbsp; { <BR>&nbsp;&nbsp; 
+      barHeight = Convert.ToSingle(dt.Rows[i][1]) * 200 / highPoint; 
+      <BR>&nbsp;&nbsp; barOrigin.Y = CHART_TOP + CHART_HEIGHT - barHeight; 
+      <BR>&nbsp;&nbsp; g.FillRectangle(new 
+      SolidBrush(ChartUtil.GetChartItemColor(i)),barOrigin.X,barOrigin.Y,barWidth,barHeight); 
+      <BR>&nbsp;&nbsp; barOrigin.X = barOrigin.X + (barWidth * 2); 
+      <BR>&nbsp;&nbsp; } <BR>&nbsp;&nbsp; //设置边 <BR>&nbsp;&nbsp; g.DrawLine(new 
+      Pen(Color.Black,2),new Point(CHART_LEFT,CHART_TOP),new 
+      Point(CHART_LEFT,CHART_TOP + CHART_HEIGHT)); <BR>&nbsp;&nbsp; 
+      g.DrawLine(new Pen(Color.Black,2),new Point(CHART_LEFT,CHART_TOP + 
+      CHART_HEIGHT),new Point(CHART_LEFT + CHART_WIDTH,CHART_TOP + 
+      CHART_HEIGHT)); <BR>&nbsp;&nbsp; //画图例框和文字 <BR>&nbsp;&nbsp; 
+      g.DrawRectangle(new Pen(Color.Black,1),200,300,199,99); <BR>&nbsp;&nbsp; 
+      g.DrawString("Legend",new 
+      Font("Tahoma",12,FontStyle.Bold),Brushes.Black,new PointF(200,300)); 
+      <BR>&nbsp;&nbsp; <BR>&nbsp;&nbsp; //画图例 <BR>&nbsp;&nbsp; PointF boxOrigin 
+      = new PointF(210,330); <BR>&nbsp;&nbsp; PointF textOrigin = new 
+      PointF(235,326); <BR>&nbsp;&nbsp; for(int i=0;i&lt;dt.Rows.Count;i++) 
+      <BR>&nbsp;&nbsp; { <BR>&nbsp;&nbsp; g.FillRectangle(new 
+      SolidBrush(ChartUtil.GetChartItemColor(i)),boxOrigin.X,boxOrigin.Y,20,10); 
+      <BR>&nbsp;&nbsp; 
+      g.DrawRectangle(Pens.Black,boxOrigin.X,boxOrigin.Y,20,10); 
+      <BR>&nbsp;&nbsp; g.DrawString(dt.Rows[i][0].ToString() + " - " + 
+      dt.Rows[i][1].ToString(),new Font("Tahoma",10),Brushes.Black,textOrigin); 
+      <BR>&nbsp;&nbsp; boxOrigin.Y += 15; <BR>&nbsp;&nbsp; textOrigin.Y += 15; 
+      <BR>&nbsp;&nbsp; } <BR>&nbsp;&nbsp; //输出图形 <BR>&nbsp;&nbsp; 
+      bm.Save(target, ImageFormat.Gif); <BR>&nbsp;&nbsp; <BR>&nbsp;&nbsp; //资源回收 
+      <BR>&nbsp;&nbsp; bm.Dispose(); <BR>&nbsp;&nbsp; g.Dispose(); 
+      <BR>&nbsp;&nbsp; } <BR>&nbsp;&nbsp; } <BR>&nbsp;&nbsp; public class 
+      ChartUtil <BR>&nbsp;&nbsp; { <BR>&nbsp;&nbsp; public ChartUtil() 
+      <BR>&nbsp;&nbsp; { <BR>&nbsp;&nbsp; } <BR>&nbsp;&nbsp; public static Color 
+      GetChartItemColor(int itemIndex) <BR>&nbsp;&nbsp; { <BR>&nbsp;&nbsp; Color 
+      selectedColor; <BR>&nbsp;&nbsp; switch(itemIndex) <BR>&nbsp;&nbsp; { 
+      <BR>&nbsp;&nbsp; case 0: <BR>&nbsp;&nbsp; selectedColor = Color.Blue; 
+      <BR>&nbsp;&nbsp; break; <BR>&nbsp;&nbsp; case 1: <BR>&nbsp;&nbsp; 
+      selectedColor = Color.Red; <BR>&nbsp;&nbsp; break; <BR>&nbsp;&nbsp; case 
+      2: <BR>&nbsp;&nbsp; selectedColor = Color.Yellow; <BR>&nbsp;&nbsp; break; 
+      <BR>&nbsp;&nbsp; case 3: <BR>&nbsp;&nbsp; selectedColor = Color.Purple; 
+      <BR>&nbsp;&nbsp; break; <BR>&nbsp;&nbsp; default: <BR>&nbsp;&nbsp; 
+      selectedColor = Color.Green; <BR>&nbsp;&nbsp; break; <BR>&nbsp;&nbsp; } 
+      <BR>&nbsp;&nbsp; return selectedColor; <BR>&nbsp;&nbsp; } <BR>&nbsp;&nbsp; 
+      } <BR>&nbsp;&nbsp;}&nbsp;<BR>&nbsp;&nbsp; <BR>代码分析：</P>
+      <P>1.引入一些namespace <BR>&nbsp;&nbsp;using System; <BR>&nbsp;&nbsp;using 
+      System.IO;//用于文件存取 <BR>&nbsp;&nbsp;using System.Data;//用于数据访问 
+      <BR>&nbsp;&nbsp;using System.Drawing;//提供画GDI+图形的基本功能 
+      <BR>&nbsp;&nbsp;using System.Drawing.Text;//提供画GDI+图形的高级功能 
+      <BR>&nbsp;&nbsp;using System.Drawing.Drawing2D;//提供画高级二维，矢量图形功能 
+      <BR>&nbsp;&nbsp;using System.Drawing.Imaging;//提供画GDI+图形的高级功能 
+      <BR>&nbsp;&nbsp;这些namespace将在后面被应用。</P>
+      <P>2.自定义一个namespace为Insight_cs.WebCharts，其中包括了两个类PieChart和BarChart，很清楚，class 
+      PieChart是为画饼图而建，class BarChart是为画条形图而建。由于class PieChart和class 
+      BarChar差不多，所以下面我们以饼图为例，进行代码分析。</P>
+      <P>3.类PieChart建立一个方法Render，此方法可以含一些参数。简单说明如下： 
+      <BR>&nbsp;&nbsp;参数title，表示饼图上方的大标题文字。 
+      <BR>&nbsp;&nbsp;参数subtitle，表示饼图上方的小标题文字。 
+      <BR>&nbsp;&nbsp;参数width，height，表示了整个图形的大小。 
+      <BR>&nbsp;&nbsp;参数charData是一个DataSet对象实例，用于画图使用。 
+      <BR>&nbsp;&nbsp;参数target是Stream对象的实例，用于图形输出时使用。 </P>
+      <P>4.为了增加可读性，定义一些常量： <BR>&nbsp;&nbsp;const int SIDE_LENGTH = 400;//画布边长 
+      <BR>&nbsp;&nbsp;const int PIE_DIAMETER = 200;//饼图直径 <BR></P>
+      <P>5.定义一个DataTable，它是DataSet中的一个数据表。其中存放了饼图的各个数据。</P>
+      <P>6.通过计算，得出饼图中的总基数sumData。</P>
+      <P>7.建立了一个BitMap对象，它为要创建的图形提供了内存空间。并由此产生一个Graphics对象，它封装了GDI+画图接口。</P>
+      <P>8.调用Graphics对象的方法ScaleTransform()，它是用来设定图形比例的。 </P>
+      <P>9.调用方法SmoothingMode()，TextRenderingHint()等来设置文字和图形的相关属性。</P>
+      <P>10.设置画布和边。</P>
+      <P>11.设置文字标题，图例，画饼图自身。&nbsp;</P>
+      <P>12.通过Stream，将图形的内容发送到浏览器。&nbsp;<BR>13.最后回收资源。&nbsp;<BR>&nbsp;&nbsp; 
+      <BR>至此画饼图的类就完成了。画条形图的方法和画饼图的方法大同小异，这里就不展开讲了。总体看来，构建画图的类没有我们想象的那样难，并没有多么高深的算法。其实整体思路，就好像我们用笔在纸上画图是一摸一样的。关键是各个方法的使用和参数设置。</P></TD></TR>
+  <TR>
+    <TD class=d_font4>&nbsp;</TD></TR></TBODY></TABLE></BODY></HTML>

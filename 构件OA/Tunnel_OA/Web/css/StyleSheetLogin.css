@@ -1,0 +1,145 @@
+﻿/*页面*/
+body { margin-top: 0px; margin-bottom: 0px;  margin-left: 0px; margin-right: 0px;background-color: #fff;OVERFLOW-X: hidden; OVERFLOW-Y: scroll;
+}
+td { line-height: 14px; font-size: 13px;}
+a { font-size:12px; color:#000000; text-decoration: none;}
+.text { line-height: 24px; color: #333333;text-decoration: none; font-size:12px;}
+
+img{border:0px}
+input{border:1px #666 solid;}
+.content{
+ background-color: #4a99ed;
+ width:1024px;
+ vertical-align:top;
+}
+.logo{
+   float:left; 
+   margin-left:108px;
+   margin-top:10px;
+}
+.title{
+ font-size:36px;
+ font-weight:800;
+ font-family:黑体;
+ color:#FFF;
+ float:left;
+ margin-left:20px;
+ margin-top:20px;
+ line-height:150%;
+}
+
+.sh{
+ align:center;
+ text-align:center;
+ font-size:12px;
+}
+.sh1{
+ align:center;
+ text-align:center;
+}
+.sh1{  
+ margin-top:-118px;
+ margin-left:416px;
+ } /* Moz */
+* html .sh1{  
+ margin-top:-112px;
+ margin-left:359px;
+} /* IE6 */
+*+html .sh1{  
+ margin-top:-112px;
+ margin-left:359px;
+ } /* IE7 */ 
+
+.sh2{
+ align:center;
+ text-align:center;
+ font-size:12px;
+}
+.login{
+ background-color: #3f7ffa;
+ border:1px #FFF solid;
+ width:300px;
+ height:160px;
+ margin-left:20px;
+}
+.log{
+ margin-top:30px;
+ margin-left:20px;
+}
+.font{
+ color:#04264b;
+ font-size:14.7px;
+ font-weight:800;
+}
+.font2{
+ color:#04264b;
+ font-size:14.7px;
+ font-weight:800;
+}
+* html .font2
+{
+	font-size:15.2px;
+}
+*+html .font2 
+{
+	font-size:15.2px;
+}
+.bottom{
+  color:#FFF;
+  font-size:14px;
+  margin-top:-30px;
+}
+.uname{
+ font-size:12px;
+ height:15px;
+ width:150px;
+}
+.upass{
+  font-size:12px;
+  height:15px;
+  width:150px;
+}
+* html .uname{
+ font-size:12px;
+ height:15px;
+ width:150px;
+}
+* html .upass{
+  font-size:12px;
+  height:15px;
+  width:150px;
+}
+*+html .uname{
+ font-size:12px;
+ height:15px;
+ width:150px;
+}
+*+html .upass{
+  font-size:12px;
+  height:15px;
+  width:150px;
+}
+.middle{
+ align:left;
+ float:left;
+}
+.middle{  
+ margin-top:50px;
+ margin-left:0px;
+ } /* Moz */
+* html .middle{  
+ margin-top:50px;
+ margin-left:60px;
+} /* IE6 */
+*+html .middle {  
+ margin-top:50px;
+ margin-left:60px;
+ } /* IE7 */ 
+
+.2p{
+ +margin-left:180px;
+ float:left;
+}
+.btn{
+ margin-left:70px;
+}

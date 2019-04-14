@@ -1,0 +1,36 @@
+ qwaszx12  admin
+ <table width="200" border="0" width="200" cellspacing="0" cellpadding="0" valign="top"
+                id="Table4">
+                <tr>
+                    <td height="25" colspan="2" class="td">
+                        &nbsp;&nbsp;<span class="STYLE10">Ï²±¨</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+            <a href="/N_MyWork/N_Star/XiBao.aspx" target="_blank"><img src="/image/icon5_1.gif"  /></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" valign="middle" bgcolor="#FFFFFF" style="border: 1px #a6bac5 solid;
+                        border-top: none;">
+                        <table width="99%" height="105" border="0" cellpadding="0" cellspacing="0" style="background-image: url(/images/xb.gif);
+                            background-repeat: repeat-x;">
+                            <tr>       
+                                <td width="58%">
+                                    <table width="100%" height="45" border="0" cellpadding="0" cellspacing="0" id="Table5">
+                                        <tr>
+                                            <td  align="center" style="display:inline" width="165" height="160">
+                                                <span class="STYLE1">
+                                                 <br />
+                   <marquee direction="left" scrollamount="2" style="display:inline">
+                        <%=Title %>
+                  <%-- <a href="/N_Right/XiBao.aspx?id=<%=mxId %>" ><font  color="#003300" size="4"><center> <%=Title %>  </center></font></a>--%>
+                  </marquee></span>
+                                            </td>
+                                        </tr>
+                                       
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>

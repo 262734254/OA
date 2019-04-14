@@ -1,0 +1,29 @@
+
+http://www.stec-oa.com
+
+模板页中放上(ScriptManager)
+整个页面套用模板页后 应该把中间的ASP:Content ContentPlaceHolder放在
+UpdatePanel中 实现局部帅新，并不要每次都刷新整个页面
+
+http://www.stec-oa.com/N_WorkFlow/MyApply/Apply_Manage.aspx?Flow=66
+
+中开始时间-截至时 间不能显示
+
+根据名称查询后 名称文本框中的内容应该清空
+
+http://www.stec-oa.com/N_Search/Search.aspx 中查询不到匹配内容弹出的提示整个页面跳转并显示白色背景   效果不好  加载页面时比较慢
+
+http://www.stec-oa.com/N_From/FormDesign.aspx页面中 Form表单设计器的拖放存在问题，不能添加word中的有序表格
+
+http://www.stec
+
+
+http://www.N_Search/N_PictureManager.aspx中的分页中 显示总页和第几页
+
+日程管理中 修改日程、把日程安排的表格宽度可以变宽的
+
+全文检索  搜索关键字
+ 
+东西比较多的时候  滚动条
+
+项经部中的检索

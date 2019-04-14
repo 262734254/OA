@@ -1,0 +1,385 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<siteMap>
+  <siteMapNode url="Index.aspx" title="首页" description="首页">
+    <siteMapNode url="N_Index/dgt.aspx" title="党工团" description="党工团">
+    </siteMapNode>
+    <siteMapNode url="N_Index/zgh.aspx" title="总工室" description="总工室">
+    </siteMapNode>
+    <siteMapNode url="N_Index/zjl.aspx" title="办公室" description="办公室">
+    </siteMapNode>
+    <siteMapNode url="N_Index/dszc.aspx" title="质量安全" description="质量安全">
+    </siteMapNode>
+    <siteMapNode url="N_Index/gbbg.aspx" title="经营计划" description="经营计划">
+    </siteMapNode>
+    <siteMapNode url="N_Index/gcgl.aspx" title="资产设备" description="资产设备">
+    </siteMapNode>
+    <siteMapNode url="N_Index/jyjh.aspx" title="材料管理" description="材料管理">
+    </siteMapNode>
+    <siteMapNode url="N_Index/rlzyb.aspx" title="综合管理" description="综合管理">
+    </siteMapNode>
+    <siteMapNode url="文件管理" title="" description="">
+      <siteMapNode url="" title="发布公文" description="">
+        <siteMapNode url="N_WorkFlow/ODocument/Document_Add.aspx" title="新建公文" description="">
+        </siteMapNode>
+        <siteMapNode url="N_WorkFlow/ODocument/Document_Manage.aspx" title="管理公文" description="">
+        </siteMapNode>
+        <siteMapNode url="N_WorkFlow/ODocument/Document_Edit.aspx" title="修改公文" description="">
+        </siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="" title="文件传阅" description="">
+        <siteMapNode url="N_WorkFlow/CDocument/Document_Add.aspx" title="文件传阅" description="">
+        </siteMapNode>
+        <siteMapNode url="N_WorkFlow/CDocument/Document_Manage.aspx" title="管理文件" description="">
+        </siteMapNode>
+        <siteMapNode url="N_WorkFlow/CDocument/Document_View.aspx" title="管理文件" description="">
+        </siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="" title="文件浏览" description="">
+        <siteMapNode url="N_WorkFlow/VDocument/Document_In.aspx" title="内部文件" description="">
+        </siteMapNode>
+        <siteMapNode url="N_WorkFlow/VDocument/Document_ViewIn.aspx" title="内部文件" description="">
+        </siteMapNode>
+        <siteMapNode url="N_WorkFlow/VDocument/Document_Out.aspx?fid=1" title="外部来文" description="">
+        </siteMapNode>
+        <siteMapNode url="N_WorkFlow/VDocument/Document_Out.aspx?fid=2" title="普通文件" description="">
+        </siteMapNode>
+        <siteMapNode url="N_WorkFlow/VDocument/Document_Out.aspx?fid=3" title="其它文件" description="">
+        </siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="" title="文件共享" description="">
+        <siteMapNode url="N_WorkFlow/FShaRing/FShaRing_Add.aspx" title="发布文件" description="">
+        </siteMapNode>
+        <siteMapNode url="N_WorkFlow/FShaRing/FShaRing_Manage.aspx" title="管理文件" description="">
+        </siteMapNode>
+        <siteMapNode url="N_WorkFlow/FShaRing/FShaRing_Share.aspx" title="共享文件" description="">
+        </siteMapNode>
+      </siteMapNode>
+    </siteMapNode>
+    <siteMapNode url="N_Calendar/default.aspx" title="日程提示" description="">
+      <siteMapNode url="N_Calendar/CalendarAdd.aspx" title="新增日程提示" description="">
+
+      </siteMapNode>
+      <siteMapNode url="N_Calendar/CalendarInfo.aspx" title="查看日程提示" description="">
+
+      </siteMapNode>
+    </siteMapNode>
+    <siteMapNode url="我的申请" title="" description="">
+      <siteMapNode url="" title="日常申请" description="">
+        <siteMapNode url="N_WorkFlow/MyApply/Apply_Add.aspx" title="新建申请" description="">
+        </siteMapNode>
+        <siteMapNode url="N_WorkFlow/MyApply/Apply_Manage.aspx" title="管理申请" description="">
+        </siteMapNode>
+        <siteMapNode url="N_WorkFlow/MyApply/Apply_Edit.aspx" title="修改申请" description="">
+        </siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="" title="其它申请" description="">
+        <siteMapNode url="N_WorkFlow/OtherDocument/Other_Add.aspx" title="新建申请" description="">
+        </siteMapNode>
+        <siteMapNode url="N_WorkFlow/OtherDocument/Other_Manage.aspx" title="管理申请" description="">
+        </siteMapNode>
+        <siteMapNode url="N_WorkFlow/OtherDocument/Other_Edit.aspx" title="修改申请" description="">
+        </siteMapNode>
+      </siteMapNode>
+    </siteMapNode>
+    <siteMapNode url="" title="我的工作" description="">
+      <siteMapNode url="" title="喜报管理" description="">
+        <siteMapNode url="N_MyWork\N_Star\StarAdd.aspx" title="发布喜报" description="">
+        </siteMapNode>
+        <siteMapNode url="N_MyWork\N_Star\StarManage.aspx" title="管理喜报" description="">
+        </siteMapNode>
+        <siteMapNode url="N_MyWork\N_Star\StarUpd.aspx" title="喜报修改" description="">
+        </siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="" title="常务报表" description="">
+        <siteMapNode url="N_MyWork/N_Report/ExamineAdd.aspx" title="新增考核" description="">
+        </siteMapNode>
+        <siteMapNode url="N_MyWork/N_Report/ProjectDel.aspx" title="管理工程" description="">
+          <siteMapNode url="N_MyWork/N_Report/ProjectAdd.aspx" title="新建工程" description="">
+          </siteMapNode>
+        </siteMapNode>
+        <siteMapNode url="N_MyWork/N_Report/Rate.aspx" title="考核打分" description="">
+        </siteMapNode>
+        <siteMapNode url="N_MyWork/N_Report/error.aspx" title="考核打分" description="">
+        </siteMapNode>
+        <siteMapNode url="N_MyWork/N_Report/PK_ProjectManager.aspx" title="考核排行" description="">
+        </siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="" title="流程审批" description="">
+        <siteMapNode url="N_WorkFlow/MyApply/Apply_Sp.aspx" title="审批列表" description="">
+        </siteMapNode>
+        <siteMapNode url="N_WorkFlow/MyApply/Apply_zSp.aspx" title="审批" description="">
+        </siteMapNode>
+        <siteMapNode url="N_WorkFlow/MyApply/Apply_zSh.aspx" title="审核" description="">
+        </siteMapNode>
+      </siteMapNode>
+    </siteMapNode>
+    <siteMapNode url="" title="信息交流" description="">
+      <siteMapNode url="" title="投票" description="">
+        <siteMapNode url="N_Exchange/N_Vote/VoteList.aspx" title="投票列表" description="">
+          <siteMapNode url="N_Exchange/N_Vote/vote.aspx" title="投票" description="">
+          </siteMapNode>
+          <siteMapNode url="N_Exchange/N_Vote/VoteShow.aspx" title="查看投票结果" description="">
+          </siteMapNode>
+        </siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="N_Chat/Default.aspx" title="聊天室" description="">
+      </siteMapNode>
+      <siteMapNode url="" title="外出留言" description="">
+        <siteMapNode url="N_Message/MessageAdd.aspx" title="发布留言" description="">
+        </siteMapNode>
+        <siteMapNode url="N_Message/MessageManage.aspx" title="管理留言" description="">
+        </siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="" title="站内信息" description="">
+        <siteMapNode url="N_Exchange\N_Message\N_MessageSend.aspx" title="发送信息" description="">
+        </siteMapNode>
+        <siteMapNode url="N_Exchange\N_Message\N_MessageReceive.aspx" title="收件箱" description="">
+        </siteMapNode>
+        <siteMapNode url="N_Exchange\N_Message\N_MessageOld.aspx" title="发件箱" description="">
+        </siteMapNode>
+        <siteMapNode url="N_Exchange\N_Message\N_MessageRecycle.aspx" title="回收站" description="">
+        </siteMapNode>
+        <siteMapNode url="N_Exchange\N_Message\N_MessageView.aspx" title="信息详细" description="">
+        </siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="" title="外部邮件" description="">
+        <siteMapNode url="N_Exchange\N_ExternalMail\N_MailSend.aspx" title="发送邮件" description="">
+        </siteMapNode>
+        <siteMapNode url="N_Exchange\N_ExternalMail\N_MailManage.aspx" title="已发邮件" description="">
+        </siteMapNode>
+        <siteMapNode url="N_Exchange\N_ExternalMail\N_MailView.aspx" title="邮件详细" description="">
+        </siteMapNode>
+      </siteMapNode>
+    </siteMapNode>
+    <siteMapNode url="" title="我的申请" description="">
+      <siteMapNode url="" title="请假申请" description="">
+        <siteMapNode url="N_WorkFlow/MyApply/Apply_Add.aspx?Flow=67" title="新建申请" description="">
+        </siteMapNode>
+        <siteMapNode url="N_WorkFlow/MyApply/Apply_Manage.aspx?Flow=67" title="管理申请" description="">
+        </siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="" title="报告申请" description="">
+        <siteMapNode url="N_WorkFlow/MyApply/Apply_Add.aspx?Flow=69" title="新建申请" description="">
+        </siteMapNode>
+        <siteMapNode url="N_WorkFlow/MyApply/Apply_Manage.aspx?Flow=69" title="管理申请" description="">
+        </siteMapNode>
+      </siteMapNode>
+    </siteMapNode>
+    <siteMapNode url="" title="个人信息" description="">
+      <siteMapNode url="" title="个人资料" description="">
+        <siteMapNode url="N_Personal_Info/N_Personal/Tunnel_UserUpd.aspx" title="资料修改" description="">
+        </siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="" title="密码修改" description="">
+        <siteMapNode url="N_Personal_Info/N_PassWord/PassUpd.aspx" title="修改密码" description="">
+        </siteMapNode>
+        <siteMapNode url="N_Personal_Info/N_PassWord/sPassUpd.aspx" title="修改审批密码" description="">
+        </siteMapNode>
+      </siteMapNode>
+    </siteMapNode>
+    <siteMapNode url="" title="系统设置" description="">
+
+      <siteMapNode url="" title="流程分类" description="">
+        <siteMapNode url="N_SysManage/FlowClass/FlowClass_Add.aspx" title="添加分类" description="">
+        </siteMapNode>
+        <siteMapNode url="N_SysManage/FlowClass/FlowClass_Manage.aspx" title="管理分类" description="">
+        </siteMapNode>
+        <siteMapNode url="N_SysManage/FlowClass/FlowClass_Edit.aspx" title="修改分类" description="">
+        </siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="" title="表单设计" description="">
+        <siteMapNode url="N_SysManage/FormDesign/Form_Add.aspx" title="新建表单" description="">
+        </siteMapNode>
+        <siteMapNode url="N_SysManage/FormDesign/Form_Manage.aspx" title="管理表单" description="">
+        </siteMapNode>
+        <siteMapNode url="N_SysManage/FormDesign/Form_Edit.aspx" title="修改表单" description="">
+        </siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="" title="流程设计" description="">
+        <siteMapNode url="N_SysManage/FlowDesign/Flow_Add.aspx" title="新建流程" description="">
+        </siteMapNode>
+        <siteMapNode url="N_SysManage/FlowDesign/Flow_Manage.aspx" title="管理流程" description="">
+          <siteMapNode url="N_SysManage/FlowDesign/Flow_Step.aspx" title="步骤管理" description="">
+            <siteMapNode url="N_SysManage/FlowDesign/Flow_StepAdd.aspx" title="新建步骤" description="">
+            </siteMapNode>
+            <siteMapNode url="N_SysManage/FlowDesign/Flow_StepEdit.aspx" title="修改步骤" description="">
+            </siteMapNode>
+          </siteMapNode>
+        </siteMapNode>
+        <siteMapNode url="N_SysManage/FlowDesign/Flow_Edit.aspx" title="修改流程" description="">
+        </siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="N_Permission/Permission.aspx" title="权限设置" description="">
+      </siteMapNode>
+      <siteMapNode url="" title="用户管理" description="">
+        <siteMapNode url="N_SysManage/N_User/Tunnel_UserAdd.aspx" title="新增用户" description="">
+        </siteMapNode>
+        <siteMapNode url="N_SysManage/N_User/Tunnel_UserList.aspx" title="管理用户" description="">
+        </siteMapNode>
+        <siteMapNode url="N_SysManage/N_User/Tunnel_UserUpd.aspx" title="修改用户" description="">
+        </siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="" title="部门管理" description="">
+        <siteMapNode url="N_SysManage/N_Bum/Tunnel_Bum.aspx" title="管理部门" description="">
+        </siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="" title="职务管理" description="">
+        <siteMapNode url="N_SysManage/N_Duty/Tunnel_DutyAdd.aspx" title="新增职务" description="">
+        </siteMapNode>
+        <siteMapNode url="N_SysManage/N_Duty/Tunnel_DutyList.aspx" title="管理职务" description="">
+        </siteMapNode>
+        <siteMapNode url="N_SysManage/N_Duty/Tunnel_dutyupd.aspx" title="修改职务" description="">
+        </siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="" title="角色管理" description="">
+        <siteMapNode url="N_SysManage/N_JueSe/Tunnel_JueseAdd.aspx" title="新增角色" description="">
+        </siteMapNode>
+        <siteMapNode url="N_SysManage/N_JueSe/Tunnel_JueSeGuanLi.aspx" title="管理角色" description="">
+        </siteMapNode>
+        <siteMapNode url="N_SysManage/N_JueSe/tunnel_jueseupd.aspx" title="修改角色" description="">
+        </siteMapNode>
+        <siteMapNode url="N_SysManage/N_JueSe/tunnel_JueseSort.aspx" title="角色排序" description="">
+        </siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="" title="投票管理" description="">
+        <siteMapNode url="N_SysManage/N_VoteManage/NewVote.aspx" title="新建投票" description="">
+        </siteMapNode>
+        <siteMapNode url="N_SysManage/N_VoteManage/VoteManageList.aspx" title="管理投票" description="">
+        </siteMapNode>
+        <siteMapNode url="N_SysManage/N_VoteManage/VoteUpd.aspx" title="修改投票" description="">
+        </siteMapNode>
+        <siteMapNode url="N_SysManage/N_VoteManage/VoteItemsAdd.aspx" title="修改投票候选项" description="">
+        </siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="" title="数据备份" description="">
+        <siteMapNode url="N_SysManage/N_Bak/Tunnel_SQLCopy.aspx" title="数据备份" description="">
+        </siteMapNode>
+      </siteMapNode>
+    </siteMapNode>
+    <siteMapNode url="" title="绩效考核" description="">
+      <siteMapNode url="N_News\N_Performance\N_SectionAdd.aspx" title="发布科室考核" description="">
+      </siteMapNode>
+      <siteMapNode url="N_News\N_Performance\N_Factory.aspx" title="发布分厂考核" description="">
+      </siteMapNode>
+      <siteMapNode url="N_News\N_Performance\N_ManagementSection.aspx" title="管理科室信息" description="">
+      </siteMapNode>
+      <siteMapNode url="N_News\N_Performance\N_ManagFactory.aspx" title="管理分厂信息" description="">
+      </siteMapNode>
+    </siteMapNode>
+    <siteMapNode url="" title="信息发布" description="">
+      <siteMapNode url="" title="公告管理" description="">
+        <siteMapNode url="N_News\N_Bulletin\N_GonggaoAdd.aspx" title="发布公告" description="">
+        </siteMapNode>
+        <siteMapNode url="N_News\N_Bulletin\N_GonggaoManage.aspx" title="公告列表" description="">
+        </siteMapNode>
+        <siteMapNode url="N_News\N_Bulletin\N_GonggaoUpd.aspx" title="修改公告" description="">
+        </siteMapNode>
+        <siteMapNode url="N_News\N_Bulletin\N_GonggaoView.aspx" title="公告详细" description="">
+        </siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="" title="新闻管理" description="">
+        <siteMapNode url="N_News\N_News\N_NewAdd.aspx" title="发布新闻" description="">
+        </siteMapNode>
+        <siteMapNode url="N_News\N_News\N_NewManage.aspx" title="新闻列表" description="">
+        </siteMapNode>
+          <siteMapNode url="N_News\N_News\N_NewUpd.aspx" title="修改新闻" description="">
+          </siteMapNode>
+          <siteMapNode url="N_News\N_News\N_NewView.aspx" title="新闻详细" description="">
+          </siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="" title="党建信息" description="">
+        <siteMapNode url="N_News\N_Information\N_InformationAdd.aspx?type=1" title="发布信息" description="">
+        </siteMapNode>
+        <siteMapNode url="N_News\N_Information\N_InformationManage.aspx?type=1" title="党建列表" description="">
+        </siteMapNode>
+          <siteMapNode url="N_News\N_Information\N_InformationAdd1.aspx" title="修改信息" description="">
+          </siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="" title="工会信息" description="">
+        <siteMapNode url="N_News\N_Information\N_InformationAdd.aspx?type=2" title="发布信息" description="">
+        </siteMapNode>
+        <siteMapNode url="N_News\N_Information\N_InformationManage.aspx?type=2" title="信息列表" description="">
+        </siteMapNode>
+          <siteMapNode url="N_News\N_Information\N_InformationUp2.aspx" title="修改信息" description="">
+          </siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="" title="团务信息" description="">
+        <siteMapNode url="N_News\N_Information\N_InformationAdd.aspx?type=3" title="发布信息" description="">
+        </siteMapNode>
+        <siteMapNode url="N_News\N_Information\N_InformationManage.aspx?type=3" title="团务列表" description="">
+        </siteMapNode>
+        <siteMapNode url="N_News\N_Information\N_InformationUp23.aspx" title="修改信息" description="">
+        </siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="" title="科室信息" description="">
+        <siteMapNode url="N_News\N_Departments\N_KeshiTypeManage.aspx" title="类型管理" description="">
+        </siteMapNode>
+        <siteMapNode url="N_News\N_Departments\N_KeshiAdd.aspx" title="发布信息" description="">
+        </siteMapNode>
+        <siteMapNode url="N_News\N_Departments\N_KeshiManage.aspx" title="信息列表" description="">
+        </siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="" title="档案管理" description="">
+        <siteMapNode url="N_News\N_Archives\N_ArchivesAdd.aspx" title="新增档案" description="">
+        </siteMapNode>
+        <siteMapNode url="N_News\N_Archives\N_ArchivesManage.aspx" title="档案列表" description="">
+        </siteMapNode>
+        <siteMapNode url="N_News\N_Archives\N_NewUpd.aspx" title="修改档案" description="">
+        </siteMapNode>
+        <siteMapNode url="N_News\N_Archives\N_NewView.aspx" title="档案详细" description="">
+        </siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="" title="图片管理" description="">
+        <siteMapNode url="N_News\N_Picture\N_PictureAdd.aspx" title="新增图片" description="">
+        </siteMapNode>
+        <siteMapNode url="N_News\N_Picture\N_PictureManage.aspx" title="图片列表" description="">
+        </siteMapNode>
+        <siteMapNode url="N_News\N_Picture\N_PictureView.aspx" title="图片详细" description="">
+        </siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="" title="项经部管理" description="">
+        <siteMapNode url="N_News\N_EntryByTheDepartmentOf\N_XJBTypeAdd.aspx" title="类型管理" description="">
+        </siteMapNode>
+        <siteMapNode url="N_News\N_EntryByTheDepartmentOf\N_XJBInfoAdd.aspx" title="信息发布" description="">
+        </siteMapNode>
+        <siteMapNode url="N_News\N_EntryByTheDepartmentOf\N_XJBInfoManage.aspx" title="信息管理" description="">
+        </siteMapNode>
+      </siteMapNode>
+    </siteMapNode>
+    <siteMapNode url="" title="标准规范" description="">
+      <siteMapNode url="N_News\N_Standard\N_StandardAdd.aspx" title="新建规范" description="">
+      </siteMapNode>
+      <siteMapNode url="N_News\N_Standard\N_Standard_Manage.aspx" title="规范管理" description="">
+      </siteMapNode>
+  </siteMapNode>
+
+    <siteMapNode url="" title="项经部" description="">
+      <siteMapNode url="" title="信息管理" description="">
+        <siteMapNode url="N_News\N_EntryByTheDepartmentOf\N_XJBAdd.aspx" title="新增信息" description="">
+        </siteMapNode>
+        <siteMapNode url="N_News\N_EntryByTheDepartmentOf\N_KeshiManage.aspx" title="信息列表" description="">
+        </siteMapNode>
+      </siteMapNode>
+    </siteMapNode>
+    <siteMapNode url="" title="资料库" description="">
+      <siteMapNode url="N_Search/N_ArchivesManage.aspx" title="档案检索" description="">
+      </siteMapNode>
+      <siteMapNode url="N_Search/N_PictureManage.aspx" title="图片检索" description="">
+        <siteMapNode url="N_Search/N_PictureView.aspx" title="图片信息" description="">
+        </siteMapNode>
+      </siteMapNode>
+        <siteMapNode url="N_Search/Search.aspx" title="全文检索" description="">
+      </siteMapNode>
+    </siteMapNode>
+    <siteMapNode url="" title="公司喜报" description="">    
+        <siteMapNode url="N_Right/XiBao.aspx" title="喜报信息" description="">
+      </siteMapNode>
+    </siteMapNode>
+    <siteMapNode url="" title="生产管理" description="">
+      <siteMapNode url="" title="生产项目" description="">
+        <siteMapNode url="N_Produce/Produce_Add.aspx" title="创建项目" description=""></siteMapNode>
+        <siteMapNode url="N_Produce/Produce_Manage.aspx" title="管理项目" description=""></siteMapNode>
+      </siteMapNode>
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

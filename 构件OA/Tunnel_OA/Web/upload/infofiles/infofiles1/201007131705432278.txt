@@ -1,0 +1,38 @@
+，可是都没有版权信息，当时客户要求将所有的图片打上公司名称？这时候，你该怎么办？ 虽说我还是江湖嫩手，可是对这一问题的解决方案还是很多，归结如下： 1.使用图形处理软件，如Photoshop等，利用其批处理功能，可以实现这个功能，可是每次数据录入员加进图片的话，还得加工一下图片，很麻烦的，看录入员大姐平常对我很不错，每日笑脸相迎，能忍心折磨她么？这个方案否决了。 2.使用.net行云流水般的图像处理，当录入员大姐上传图片的时候，就自动加上公司标记，这样岂不更好，嗯，这想法不错，可以进入2005最佳解决方案第万强了，好说干就干。
+ using System.Drawing;
+ using System.IO; 
+using System.Drawing.Imaging;
+ private void AddTextToImg(string fileName,string text) 
+{ 
+if(!File.Exists(MapPath(fileName)))
+ {
+ throw new FileNotFoundException("The file don't exist!"); 
+ } 
+if( text == string.Empty )
+ { 
+return;
+ } //还需要判断文件类型是否为图像类型，这里就不赘述了 
+System.Drawing.Image 
+image = System.Drawing.Image.FromFile(MapPath(fileName)); 
+Bitmap bitmap = new Bitmap(image,image.Width,image.Height);
+ Graphics g = Graphics.FromImage(bitmap);
+ float fontSize = 12.0f; //字体大小
+ float textWidth = text.Length*fontSize; //文本的长度 //下面定义一个矩形区域，以后在这个矩形里画上白底黑字
+ float rectX = 0; 
+float rectY = 0;
+ float rectWidth = text.Length*(fontSize+8); 
+float rectHeight = fontSize+8; //声明矩形域
+ RectangleF textArea = new RectangleF(rectX,rectY,rectWidth,rectHeight); 
+Font font = new Font("宋体",fontSize); //定义字体 
+Brush whiteBrush = new SolidBrush(Color.White);//白笔刷，画文字用 
+Brush blackBrush = new SolidBrush(Color.Black); //黑笔刷，画背景用 
+g.FillRectangle(blackBrush,rectX,rectY,rectWidth,rectHeight);
+ g.DrawString(text,font,whiteBrush,textArea); 
+MemoryStream ms = new MemoryStream( ); //保存为Jpg类型 
+bitmap.Save(ms,ImageFormat.Jpeg); //输出处理后的图像，这里为了演示方便，我将图片显示在页面中了
+ Response.Clear(); 
+Response.ContentType = "image/jpeg";
+ Response.BinaryWrite( ms.ToArray() ); 
+g.Dispose(); bitmap.Dispose(); image.Dispose(); 
+} 
+ AddTextToImg("me.jpg","小智"); 一切OK了，感觉.net确实好强大，这些功能在Asp中可是奢侈品了，而在.Net环境中却能轻而易举的完成！

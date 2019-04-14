@@ -1,0 +1,5 @@
+SCC = This is a Source Code Control file
+
+[Tunnel.Model.csproj]
+SCC_Aux_Path = "\\Server\源代码管理盘\VSS"
+SCC_Project_Name = "$/Tunnel_OA.root/Tunnel_OA/Model", FGAAAAAA

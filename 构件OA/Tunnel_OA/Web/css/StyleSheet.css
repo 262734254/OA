@@ -1,0 +1,25 @@
+﻿body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	 background-color:#F5F5F5;
+}
+.greenz {	
+	color:#0b3000;
+	font-size:12px;
+	FILTER: Glow(color=#ffffff, strength=3);
+	HEIGHT: 9pt;
+}
+a:link {
+	text-decoration: none; color:#0033FF;
+}
+a:visited {
+	text-decoration: none; color:#0033FF;
+}
+a:hover {
+	text-decoration: none; color:#003333;
+}
+a:active {
+	text-decoration: none; color:#0033FF;
+}

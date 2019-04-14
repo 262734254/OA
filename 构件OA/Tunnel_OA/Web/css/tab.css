@@ -1,0 +1,58 @@
+﻿body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+.nTab4{
+float: left;
+width: 100%;
+height:200px;
+margin: 0 auto;
+background-position:left;
+background-repeat:repeat-y;
+text-align:left;
+}
+.nTab4 .TabTitle4{
+clear: both;
+height: 30px;
+overflow: hidden;
+background-image:url(../images/home.jpg); background-position:-296px -256px;
+text-align:left;
+padding-left:24px !important; padding-left:20px;
+}
+.nTab4 .TabTitle4 ul{
+border:0;
+padding:0;
+margin:0;
+}
+.nTab4 .TabTitle4 li{
+float: left;
+width: 100px;
+cursor: pointer;
+padding-top: 5px;
+padding-right: 0px;
+padding-left: 0px;
+padding-bottom: 2px;
+list-style-type: none;
+font-size: 12px;
+text-align: center;
+height:20px;
+}
+.nTab4 .TabTitle4 .active{background:#fff;border-left:1px #A2BBD9 solid;border-top:1px #A2BBD9 solid;border-right:1px #AACCEE solid;border-bottom:1px #fff solid;}
+.nTab4 .TabTitle4 .normal{border:1px #A2BBD9 solid; background-image:url(../images/hm22bj.gif); background-repeat:repeat-x;}
+.nTab4 .TabContent4{
+width:auto;background:#fff;
+margin: 0px auto;
+padding:5px 0 0 0;
+height:170px;
+}
+.none {display:none;}
+.niuren{ width:264px; height:100px;}
+.niurenpic{ width:80px; height:100px; float:left;}
+.niurenasp{ width:170px; height:90px; float:right; padding-top:10px;}
+.niurenasp b{ border:0; margin:0; padding:0;}
+.niurenasp p{ border:0; margin:0; color:#666666; padding-top:5px; line-height:20px;}
+.niurend{ width:264px; height:60px; margin-top:5px;}
+.niurend ul{ margin:0; padding:0;}
+.niurend li{ height:20px; margin:0; padding:0;}

@@ -1,0 +1,30 @@
+﻿/*页面*/
+body { margin-top: 0px; margin-bottom: 0px;  margin-left: 0px; margin-right: 0px; background-color:#ffffff; font-size:12px }
+a { font-size:12px; color:#000000; text-decoration: none;}
+.lanmuTitle { cursor:hand; }
+.text { line-height: 24px; color: #333333;text-decoration: none; font-size:12px; no-repeat right top;}
+a{ font-size:12px}
+a:link{ color:#000000; text-decoration:none;}
+a:visited{color:#000000; text-decoration:none;}
+a:hover{color:#F29731; text-decoration:none;}
+.a{ font-size:12px}
+.a div:link{ color:#000000; text-decoration:none;}
+.a div:visited{color:#000000; text-decoration:none;}
+.a div:hover{color:#F29731; text-decoration:none;}
+
+img{border:0px}
+
+.titleFont{
+ color:#fff;
+ font-size:12px;
+}
+
+.contentFont{
+ color:#286a84;
+ font-size:12px;
+ font-weight:800;
+ font-family:宋体;
+}
+
+
+

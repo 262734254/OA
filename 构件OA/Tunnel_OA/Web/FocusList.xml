@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Image>
+  <Focus ID="1">
+    <Title> </Title>
+    <Path>image\New\New_1.JPG</Path>
+  </Focus>
+  <Focus ID="2">
+    <Title> </Title>
+    <Path>image\New\New_2.JPG</Path>
+  </Focus>
+  <Focus ID="3">
+    <Title> </Title>
+    <Path>image\New\New_3.JPG</Path>
+  </Focus>
+  <Focus ID="4">
+    <Title> </Title>
+    <Path>image\New\New_4.JPG</Path>
+  </Focus>
+  <Focus ID="5">
+    <Title> </Title>
+    <Path>image\New\New_5.JPG</Path>
+  </Focus>
+  <Focus ID="6">
+    <Title> </Title>
+    <Path>image\New\New_6.JPG</Path>
+  </Focus>
+  <Focus ID="7">
+    <Title> </Title>
+    <Path>image\New\New_7.JPG</Path>
+  </Focus>
+  <Focus ID="8">
+    <Title> </Title>
+    <Path>image\New\New_8.JPG</Path>
+  </Focus>
+  <Focus ID="9">
+    <Title> </Title>
+    <Path>image\New\New_9.JPG</Path>
+  </Focus>
+  <Focus ID="10">
+    <Title> </Title>
+    <Path>image\New\New_10.JPG</Path>
+  </Focus>
+</Image>

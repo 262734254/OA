@@ -1,0 +1,10 @@
+E:\OA\Tunnel_OA\TheDebug\Tunnel.Model.dll
+E:\OA\Tunnel_OA\TheDebug\Tunnel.Model.pdb
+E:\OA\Tunnel_OA\Model\obj\Debug\ResolveAssemblyReference.cache
+E:\OA\Tunnel_OA\Model\obj\Debug\Tunnel.Model.dll
+E:\OA\Tunnel_OA\Model\obj\Debug\Tunnel.Model.pdb
+E:\构件OA\Tunnel_OA\TheDebug\Tunnel.Model.dll
+E:\构件OA\Tunnel_OA\TheDebug\Tunnel.Model.pdb
+E:\构件OA\Tunnel_OA\Model\obj\Debug\ResolveAssemblyReference.cache
+E:\构件OA\Tunnel_OA\Model\obj\Debug\Tunnel.Model.dll
+E:\构件OA\Tunnel_OA\Model\obj\Debug\Tunnel.Model.pdb

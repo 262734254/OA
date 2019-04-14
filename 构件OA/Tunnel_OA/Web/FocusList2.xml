@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Image>
+  <Focus ID="1">
+    <Title> </Title>
+    <Path>image\XFSY\xfsy_1.JPG</Path>
+  </Focus>
+  <Focus ID="2">
+    <Title> </Title>
+    <Path>image\XFSY\xfsy_2.JPG</Path>
+  </Focus>
+  <Focus ID="3">
+    <Title> </Title>
+    <Path>image\XFSY\xfsy_3.jpg</Path>
+  </Focus>
+  <Focus ID="4">
+    <Title> </Title>
+    <Path>image\XFSY\xfsy_4.JPG</Path>
+  </Focus>
+  <Focus ID="5">
+    <Title> </Title>
+    <Path>image\XFSY\xfsy_5.jpg</Path>
+  </Focus>
+  <Focus ID="6">
+    <Title> </Title>
+    <Path>image\XFSY\xfsy_6.jpg</Path>
+  </Focus>
+</Image>

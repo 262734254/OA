@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <title>无标题文档</title>
+    
+    <link href="../css/Css.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+        function qiehuan(num) {
+            for (var i = 1; i <= 2; i++) {
+                if (num == i) {
+                    document.getElementById("icon" + i).className = "showicon";
+                } else {
+                    document.getElementById("icon" + i).className = "showicons";
+                }
+            }
+        }
+    </script>
+
+    <script type="text/javascript">
+        function qiehuan2(obj) {
+            for (var i = 1; i < 6; i++) {
+                if (document.getElementById("icon" + i) != obj)
+                    document.getElementById("icon" + i).className = "showicons";
+                else
+                    document.getElementById("icon" + i).className = "showicon";
+            }
+        }
+    </script>
+
+</head> 
+<body>
+    <table width="100%" border="0" cellpadding="0" cellspacing="0" id="newtop01" style="border-left:1px #6f97b1 solid;border-right:1px #6f97b1 solid">
+        <tr>
+            <td width="3%" height="30" align="center">
+                <img src="../images/new_icon01.gif" width="16" height="16" />
+            </td>
+            <td width="92%">
+                <font class="titlfont">当前位置：</font><font class="titlfontson">资料库-全文检索</font>
+            </td>
+            <td width="5%" align="center">
+                <img src="../images/new_icon02.gif" width="16" height="15" />
+            </td>
+        </tr>
+    </table>
+    <table width="100%" height="34" border="0" cellpadding="0" cellspacing="0" style="border-bottom: 1px #6f97b1 solid;
+        border-left: 1px #6f97b1 solid">
+        <tr>
+            <td width="10" bgcolor="#f6f6f6">
+                &nbsp;
+            </td>
+            <td width="74" id="icon1" valign="bottom" bgcolor="#f6f6f6" class="showicon" >
+                <a href="Search.aspx" class="a" >
+                    <div style="width: 73; height: 27px; cursor: pointer;">
+                        全文检索</div>
+                </a>
+            </td>
+            <td bgcolor="#f6f6f6">
+                &nbsp;
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

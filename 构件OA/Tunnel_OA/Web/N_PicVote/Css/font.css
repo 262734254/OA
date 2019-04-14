@@ -1,0 +1,66 @@
+font {
+	font-size: 9pt; line-height: 18px; font-family: "宋体"
+}
+A:link {
+	color: #666666; text-decoration: none
+}
+A:visited {
+	color: #666666; text-decoration: none
+}
+A:active {
+	color: #666666; text-decoration: none
+}
+A:hover {
+	color: #666666; text-decoration: underline
+}
+input.input {
+	border-right: #000000 1px solid; border-top: #000000 1px solid; border-left: #000000 1px solid; border-bottom: #000000 1px solid
+}
+A {
+	font-size: 9pt; color: #000000; line-height: 18px
+}
+table {
+	font-weight: normal; font-size: 9pt; color: #666666; line-height: 20px; font-family: "宋体";
+	margin-left: 0px;
+}
+body {
+	font-weight: normal; font-size: 9px; color: #666666; text-indent: 8pt; line-height: 18px; font-family: "宋体"
+}
+textarea {
+	border-right: 1px solid; border-TOP: 1px solid; font-size: 9pt; border-left: 1px solid; color: #666666; line-height: 18px; border-bottom: 1px solid; FONT-FAMILY: "宋体"
+}
+.bg {
+	background-image: url(../Pic/bg7.gif); background-repeat: repeat-x
+}
+.tit {
+	font-weight: bold; font-size: 14px; line-height: 80px
+}
+.na {
+	line-height: 16px
+}
+.img
+{
+	width:700px;
+	height:300px;
+	
+}
+  .style23
+  {
+      height: 27px;
+  }
+   .style24
+   {
+   height: 27px;
+   width: 587px;
+   }
+  .LinkButton
+{   
+     background-image:url(../../image/button3.gif)
+}
+.command{
+            color:Black;
+        	font-size:12px;
+        	border-width:2px;
+        	font-weight:bolder;
+}
+
