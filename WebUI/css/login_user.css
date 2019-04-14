@@ -1,0 +1,70 @@
+A.close:link
+{
+    color: #000000;
+    text-decoration: none;
+}
+A.close:visited
+{
+    color: #000000;
+    text-decoration: none;
+}
+A.close:active
+{
+    color: #000000;
+    text-decoration: none;
+}
+A.close:hover
+{
+    color: #000000;
+    text-decoration: none;
+}
+.inputFrm
+{
+    border-right: #d2d2d2 1px solid;
+    border-top: #d2d2d2 1px solid;
+    font-size: 10pt;
+    border-left: #d2d2d2 1px solid;
+    width: 100%;
+    border-bottom: #d2d2d2 1px solid;
+    height: auto;
+}
+.selectFrm
+{
+    border-top-width: 1px;
+    border-left-width: 1px;
+    font-size: 9pt;
+    border-bottom-width: 1px;
+    width: 80%;
+    border-right-width: 1px;
+    FONT-COLOR: #FFFFFF;
+}
+.PageBody
+{
+    FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#B2DBFE,endColorStr=#FFFFFF);
+    background-color: #b2dbfe;
+}
+.UpTr
+{
+    background: #ebebeb;
+}
+.DownTr
+{
+    background: #ffffff;
+}
+.LoginLine
+{
+    background: #e4e4e4;
+}
+.ItemTitleFont
+{
+    font-size: 9pt;
+    color: #8d3131;
+    font-family: ËÎÌו;
+}
+.VersionTitle
+{
+    padding-right: 8px;
+    font-size: 9pt;
+    color: #000000;
+    font-family: ËÎÌו;
+}

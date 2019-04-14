@@ -1,0 +1,89 @@
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<link href="css/login.css" rel="stylesheet" type="text/css" />
+<META http-equiv=Pragma content=no-cache><LINK href="css/login_user.css" 
+type=text/css rel=stylesheet>
+<title>无标题文档</title>
+</head>
+
+<body class=PageBody >
+<form name="form1" method="post" action="">
+<div style=" width:99%; height:99%; ">
+<div style="width:99%; height:40%;"></div>
+<div style="width:99%; height:58%;">
+<div style="width:20%; height:99%; float:left;"></div>
+<div style="width:78%; height:99%;">
+
+
+
+
+  <div style=" width:543px; height:452px; background-image:url(image/9zxw_htbj.gif) ">
+<div style="width:99%; height:17%;"></div>
+<div style="width:99%; height:10px;"></div>
+<div style="width:99%; height:4%;"></div>
+<div style="width:99%; height:55%;" align="center">
+<table background="image/9zxw_ztbj.jpg" width="476" height="223" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="50" colspan="3"><img src="image/oa.gif" width="377" height="73"></td>
+    </tr>
+  <tr>
+    <td width="50" height="25">&nbsp;</td>
+    <td width="72">用户名:</td>
+    <td width="354"><div align="left">
+      <input name="textfield"  onmouseover="this.className='myTxt2'" onMouseOut="this.className='myTxt1'" class="myTxt1" type="text" size="18">
+    </div></td>
+  </tr>
+  <tr>
+    <td height="31">&nbsp;</td>
+    <td>密&nbsp; 码:</td>
+    <td><div align="left">
+      <input name="textfield"  onmouseover="this.className='myTxt2'" onMouseOut="this.className='myTxt1'" class="myTxt1"  type="password" size="18">
+    </div></td>
+  </tr>
+  <tr>
+    <td height="26">&nbsp;</td>
+    <td>验证码:</td>
+    <td><div align="left">
+      <input name="textfield"  onmouseover="this.className='myTxt2'" onMouseOut="this.className='myTxt1'" class="myTxt1" type="text" size="18">
+    </div></td>
+  </tr>
+  <tr>
+    <td height="14">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><div align="left">
+    </div></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><div align="left"><img src="image/dl.gif" width="73" height="24"><img src="image/zc.gif" width="73" height="24"></div></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+
+</div>
+<div style="width:99%; height:10px;"></div>
+
+</div>
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+
+</div>
+</form>
+</body>
+</html>

@@ -1,0 +1,42 @@
+﻿using System;
+using System.Collections;
+using System.Configuration;
+using System.Data;
+using System.Linq;
+using System.Web;
+using System.Web.Security;
+using System.Web.UI;
+using System.Web.UI.HtmlControls;
+using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
+using System.Xml.Linq;
+using Model;
+using BLL.WorkHelper;
+public partial class AddressManager_Userlist : System.Web.UI.Page
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+
+    }
+    protected void gvAddress_SelectedIndexChanged(object sender, EventArgs e)
+    {
+
+    }
+    protected void gvAddress_RowDataBound(object sender, GridViewRowEventArgs e)
+    {
+
+    }
+    protected void gvAddress_RowCommand(object sender, GridViewCommandEventArgs e)
+    {
+        string cmd = e.CommandName;
+        int Id = Convert.ToInt32(e.CommandArgument);
+        if (cmd == "Dele")
+        {
+            
+        }
+        //else if (cmd == "De")
+        //{
+        //    Response.Redirect("~/AddressManager/UserInfoDetails.aspx?FriendUserId.UId=" + Id);
+        //}
+    }
+}

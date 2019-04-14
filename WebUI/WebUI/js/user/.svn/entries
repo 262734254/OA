@@ -1,0 +1,52 @@
+8
+
+dir
+1583
+http://192.168.1.2:8090/t24/luchao/t24oa/prototype/oa/js/user
+http://192.168.1.2:8090/t24/luchao
+
+
+
+2008-09-12T09:50:33.515625Z
+1403
+chen
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0639f0-696b-c24a-bade-f51ab49726b9
+
+validateUser.js
+file
+
+
+
+
+2008-09-17T06:00:15.453125Z
+80bdde0161749d72312a9f04bc4b228c
+2008-09-12T09:50:33.515625Z
+1403
+chen
+
+Validation.js
+file
+
+
+
+
+2008-09-17T06:00:15.453125Z
+9529e89acfb8b5b75e2aa7fda0b8597e
+2008-09-12T09:50:33.515625Z
+1403
+chen
+

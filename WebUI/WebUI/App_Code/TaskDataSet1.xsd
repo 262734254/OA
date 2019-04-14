@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="TaskDataSet1" targetNamespace="http://tempuri.org/TaskDataSet1.xsd" xmlns:mstns="http://tempuri.org/TaskDataSet1.xsd" xmlns="http://tempuri.org/TaskDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsPropertyName="OA_DBConnectionString" ConnectionStringObject="Data Source=192.168.1.53;Initial Catalog=OA_DB;Persist Security Info=True;User ID=sa;Password=sa" IsAppSettingsProperty="false" Modifier="Assembly" Name="OA_DBConnectionString" ParameterPrefix="@" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="TaskDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="TaskDataSet1" msprop:Generator_DataSetName="TaskDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TaskPrint" msprop:Generator_UserTableName="TaskPrint" msprop:Generator_RowDeletedName="TaskPrintRowDeleted" msprop:Generator_RowChangedName="TaskPrintRowChanged" msprop:Generator_RowClassName="TaskPrintRow" msprop:Generator_RowChangingName="TaskPrintRowChanging" msprop:Generator_RowEvArgName="TaskPrintRowChangeEvent" msprop:Generator_RowEvHandlerName="TaskPrintRowChangeEventHandler" msprop:Generator_TableClassName="TaskPrintDataTable" msprop:Generator_TableVarName="tableTaskPrint" msprop:Generator_RowDeletingName="TaskPrintRowDeleting" msprop:Generator_TablePropName="TaskPrint">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" msprop:Generator_UserColumnName="id" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="title" msprop:Generator_UserColumnName="title" msprop:Generator_ColumnVarNameInTable="columntitle" msprop:Generator_ColumnPropNameInRow="title" msprop:Generator_ColumnPropNameInTable="titleColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="work" msprop:Generator_UserColumnName="work" msprop:Generator_ColumnVarNameInTable="columnwork" msprop:Generator_ColumnPropNameInRow="work" msprop:Generator_ColumnPropNameInTable="workColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Principal" msprop:Generator_UserColumnName="Principal" msprop:Generator_ColumnVarNameInTable="columnPrincipal" msprop:Generator_ColumnPropNameInRow="Principal" msprop:Generator_ColumnPropNameInTable="PrincipalColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="StepName" msprop:Generator_UserColumnName="StepName" msprop:Generator_ColumnVarNameInTable="columnStepName" msprop:Generator_ColumnPropNameInRow="StepName" msprop:Generator_ColumnPropNameInTable="StepNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FinishRate" msprop:Generator_UserColumnName="FinishRate" msprop:Generator_ColumnVarNameInTable="columnFinishRate" msprop:Generator_ColumnPropNameInRow="FinishRate" msprop:Generator_ColumnPropNameInTable="FinishRateColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="rate" msprop:Generator_UserColumnName="rate" msprop:Generator_ColumnPropNameInRow="rate" msprop:Generator_ColumnVarNameInTable="columnrate" msprop:Generator_ColumnPropNameInTable="rateColumn" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

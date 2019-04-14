@@ -1,0 +1,170 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Userlist.aspx.cs" Inherits="AddressManager_Userlist" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>用户列表信息页面</title>
+   <link href="../css/public.css" type="text/css" rel="stylesheet"/>
+      <link href="../css/6/style.css" type="text/css" rel="Stylesheet" />
+       <script type="text/javascript">
+        function selAll(obj)
+        {
+            var items=document.getElementsByTagName("input");
+            for(var i=0;i<items.length;i++)
+            {
+                if(items[i]!=null&&items[i].type=="checkbox")
+                {
+                    items[i].checked=obj.checked;
+                }
+            }
+        }
+    </script>
+    <style type="text/css">
+        .style2
+        {
+            width: 100%; background-color:#C6DAF3;
+            height: 450px;
+        }
+        .style3
+        {
+            background-color: #C6DAF3;
+            height: 450px;
+        }
+      
+        .style4
+        {
+            height: 10px;
+        }
+      
+    </style>
+   
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+       
+        <table class="style2">
+            <tr>
+                <td align="center" class="title1">
+                    <h3>用户信息管理</h3></td>
+            </tr>
+            <tr>
+                <td align="center">
+       
+        <table>
+            <tr>
+                <td rowspan="3" class="style3" valign="top">
+                    &nbsp;</td>
+                <td class="style4">
+                    姓名：<asp:TextBox ID="TextBox1" class="inputs" runat="server"></asp:TextBox>
+                &nbsp;&nbsp;&nbsp;
+                    <asp:Button ID="Button1" runat="server" class="BigButton" Text="查   询" />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="AddUserInfo.aspx">新增用户信息</a>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:left">
+                    <input type="button" class="BigButton" value="删  除" onclick="return confirm('确定要删除？')"/>
+                </td>
+            </tr>
+            <tr>
+                
+                <td valign="top">
+                
+                    <asp:GridView ID="gvAddress" runat="server" AutoGenerateColumns="False" 
+                                        DataSourceID="objAddress" 
+                         onrowdatabound="gvAddress_RowDataBound" Width="764px" 
+                        onrowcommand="gvAddress_RowCommand">
+                        <Columns>
+                            <asp:TemplateField HeaderText="序号">
+                                <HeaderTemplate>
+                                    <input ID="Checkbox10" type="checkbox" onclick="selAll(this)" />序号
+                                </HeaderTemplate>
+                                <ItemTemplate>
+                                    <asp:CheckBox ID="chkNumber" runat="server" />
+                                </ItemTemplate>
+                            </asp:TemplateField>
+                            <asp:TemplateField HeaderText="SelfUserId" SortExpression="SelfUserId" 
+                                Visible="False">
+                                <EditItemTemplate>
+                                    <asp:TextBox ID="TextBox1" runat="server" Text='<%# Bind("SelfUserId") %>'></asp:TextBox>
+                                </EditItemTemplate>
+                                <ItemTemplate>
+                                    <asp:Label ID="Label1" runat="server" Text='<%# Eval("SelfUserId.Name") %>'></asp:Label>
+                                </ItemTemplate>
+                            </asp:TemplateField>
+                            <asp:TemplateField HeaderText="员工用户名" SortExpression="FriendUserId">
+                                <EditItemTemplate>
+                                    <asp:TextBox ID="TextBox2" runat="server" Text='<%# Bind("FriendUserId") %>'></asp:TextBox>
+                                </EditItemTemplate>
+                                <ItemTemplate>
+                                    <asp:Label ID="Label2" runat="server" Text='<%# Eval("FriendUserId.Name") %>'></asp:Label>
+                                </ItemTemplate>
+                            </asp:TemplateField>
+                            <asp:TemplateField HeaderText="年龄">
+                                <ItemTemplate>
+                                    <asp:Label ID="Label3" runat="server" Text='<%# Eval("FriendUserId.Age") %>'></asp:Label>
+                                </ItemTemplate>
+                            </asp:TemplateField>
+                            <asp:TemplateField HeaderText="性别">
+                                <ItemTemplate>
+                                    <asp:Label ID="Label4" runat="server" Text='<%# Eval("FriendUserId.Sex") %>'></asp:Label>
+                                </ItemTemplate>
+                            </asp:TemplateField>
+                            <asp:TemplateField HeaderText="电话号码">
+                                <ItemTemplate>
+                                    <asp:Label ID="Label5" runat="server" 
+                                        Text='<%# Eval("FriendUserId.MobilePhone") %>'></asp:Label>
+                                </ItemTemplate>
+                            </asp:TemplateField>
+                           
+                           
+                            <asp:TemplateField HeaderText="删除">
+                                <ItemTemplate>
+                                    <asp:LinkButton ID="lnkDelete" runat="server" 
+                                        CommandArgument='<%# Eval("SelfUserId.UId") %>' CommandName="Dele">删除</asp:LinkButton>
+                                </ItemTemplate>
+                            </asp:TemplateField>
+                            <asp:TemplateField HeaderText="修改">
+                                <ItemTemplate>
+                                    <asp:HyperLink ID="HyperLink2" runat="server"
+                                    NavigateUrl='<%# string.Format("UpdateUserInfo.aspx?friendid={0}",Eval("FriendUserId.UId")) %> ' Text="修改" ></asp:HyperLink>
+                                </ItemTemplate>
+                            </asp:TemplateField>
+                            <asp:TemplateField HeaderText="详情">
+                                <ItemTemplate>
+                                    <asp:HyperLink ID="HyperLink1" runat="server" 
+                                        NavigateUrl='<%# string.Format("UserInfoDetails.aspx?friendid={0}",Eval("FriendUserId.UId")) %> ' 
+                                        Text="详情"></asp:HyperLink>
+                                </ItemTemplate>
+                            </asp:TemplateField>
+                        </Columns>
+                        <HeaderStyle CssClass="TableHeader" />
+                    </asp:GridView>
+                                    <asp:ObjectDataSource ID="objAddress" runat="server" SelectMethod="getAddress" 
+                                        TypeName="BLL.WorkHelper.AddressManager">
+                                        <SelectParameters>
+                                            <asp:QueryStringParameter DefaultValue="" Name="selfUserId" 
+                                                QueryStringField="selfUserId" Type="Int32" />
+                                        </SelectParameters>
+                                    </asp:ObjectDataSource>
+                </td>
+            </tr>
+            <tr>
+                
+                <td colspan="2">
+                    共有Label记录&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp; 首页&nbsp; 上一页&nbsp; 下一页&nbsp;&nbsp; 尾页</td>
+            </tr>
+        </table>
+    
+                </td>
+            </tr>
+        </table>
+    
+    </div>
+    
+    </form>
+</body>
+</html>

@@ -1,0 +1,40 @@
+.BTN {
+	BORDER-RIGHT: buttonface 1px solid; BORDER-TOP: buttonface 1px solid; BORDER-LEFT: buttonface 1px solid; WIDTH: 22px; BORDER-BOTTOM: buttonface 1px solid; POSITION: absolute; TOP: 1px; HEIGHT: 23px; BACKGROUND-COLOR: buttonface
+}
+.ICO {
+	LEFT: -1px; POSITION: absolute; TOP: -1px
+}
+.SEP {
+	BORDER-RIGHT: buttonhighlight 1px solid; FONT-SIZE: 0px; BORDER-LEFT: buttonshadow 1px solid; WIDTH: 1px; POSITION: absolute; TOP: 1px; HEIGHT: 22px
+}
+.GEN {
+	FONT: 12px verdana,arial,sans-serif; POSITION: absolute; TOP: 2px; HEIGHT: 22px
+}
+.HDLDIV {
+	BORDER-RIGHT: buttonshadow 1px solid; BORDER-TOP: buttonhighlight 1px solid; FONT-SIZE: 1px; BORDER-LEFT: buttonhighlight 1px solid; WIDTH: 3px; POSITION: absolute; TOP: 1px; HEIGHT: 22px; BACKGROUND-COLOR: buttonface
+}
+.BTN_OVERUP {
+	BORDER-RIGHT: buttonshadow 1px solid; BORDER-TOP: buttonhighlight 1px solid; BORDER-LEFT: buttonhighlight 1px solid; WIDTH: 24px; BORDER-BOTTOM: buttonshadow 1px solid; POSITION: absolute; TOP: 1px; HEIGHT: 23px; BACKGROUND-COLOR: buttonface
+}
+.BTN_OVERDOWN {
+	BORDER-RIGHT: buttonhighlight 1px solid; BORDER-TOP: buttonshadow 1px solid; BORDER-LEFT: buttonshadow 1px solid; WIDTH: 24px; BORDER-BOTTOM: buttonhighlight 1px solid; POSITION: absolute; TOP: 1px; HEIGHT: 23px; BACKGROUND-COLOR: buttonface
+}
+.BTN_DOWN {
+	BORDER-RIGHT: buttonhighlight 1px solid; BORDER-TOP: buttonshadow 1px solid; BORDER-LEFT: buttonshadow 1px solid; WIDTH: 24px; BORDER-BOTTOM: buttonhighlight 1px solid; POSITION: absolute; TOP: 1px; HEIGHT: 23px; BACKGROUND-COLOR: gainsboro
+}
+.ICO_DOWN {
+	LEFT: 0px; POSITION: absolute; TOP: 0px
+}
+.ICO_DOWNPRESS {
+	LEFT: 1px; POSITION: absolute; TOP: 1px
+}
+body {
+	SCROLLBAR-FACE-COLOR: #EEFBDF; FONT-SIZE: 9pt; SCROLLBAR-HIGHLIGHT-COLOR: #ffffff; SCROLLBAR-SHADOW-COLOR: #83D803; WORD-BREAK: break-all; SCROLLBAR-3DLIGHT-COLOR: #83D803; SCROLLBAR-ARROW-COLOR: #83D803; FONT-FAMILY: "verdana", "ËÎÌו", "Seoul", "Gulim"; SCROLLBAR-DARKSHADOW-COLOR: #ffffff; SCROLLBAR-BASE-COLOR: #83D803; LETTER-SPACING: 1px
+}
+
+.tbContentElement {
+	LEFT: 0px; WIDTH: 1px; POSITION: absolute; TOP: 0px; HEIGHT: 1px
+}
+.BAR {
+	LEFT: 0px; POSITION: absolute; TOP: 0px; HEIGHT: 25px; BACKGROUND-COLOR: buttonface
+}

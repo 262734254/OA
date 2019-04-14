@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{91F0FFEB-919B-44A7-BFF5-8ADDFCBF0938}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IDAL</RootNamespace>
+    <AssemblyName>IDAL</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Car\ICarBuyApplyService.cs" />
+    <Compile Include="Car\ICarByapplyService.cs" />
+    <Compile Include="Car\ICarDavnoteService.cs" />
+    <Compile Include="Car\ICarEnterService.cs" />
+    <Compile Include="Car\ICarsService.cs" />
+    <Compile Include="Car\ICarTypeService.cs" />
+    <Compile Include="Car\ICarUserInfoService.cs" />
+    <Compile Include="Car\ICheerService.cs" />
+    <Compile Include="Car\ICostSuperviseService.cs" />
+    <Compile Include="Car\IDisobeyRecordService.cs" />
+    <Compile Include="Car\IServicesService.cs" />
+    <Compile Include="IBaseFace.cs" />
+    <Compile Include="Matter\IExamineService.cs" />
+    <Compile Include="Meeting\IMeetingApplicationService.cs" />
+    <Compile Include="Meeting\IMeetingSummaryService.cs" />
+    <Compile Include="Meeting\IRoomArrageService.cs" />
+    <Compile Include="Meeting\IRoomInfoService.cs" />
+    <Compile Include="Power\IDepartmentService.cs" />
+    <Compile Include="Power\IRolePowerService.cs" />
+    <Compile Include="Power\IUserInfoService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resource\IApplicationResourceService.cs" />
+    <Compile Include="Resource\IBorrowApplicationService.cs" />
+    <Compile Include="Resource\IProviderInfoService.cs" />
+    <Compile Include="Resource\IResourceInfoService.cs" />
+    <Compile Include="Resource\IResourceRestoreService.cs" />
+    <Compile Include="Resource\IResourceStoreService.cs" />
+    <Compile Include="Resource\IResourceTypeService.cs" />
+    <Compile Include="Resource\ISpoilageRegisterService.cs" />
+    <Compile Include="Resource\IStockApplicationService.cs" />
+    <Compile Include="Target\ITaskService.cs" />
+    <Compile Include="WorkHelper\IAddressService.cs" />
+    <Compile Include="WorkHelper\ICalendarService.cs" />
+    <Compile Include="WorkHelper\ILeaveWordService.cs" />
+    <Compile Include="WorkHelper\IMessageType.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{D3866CA7-3D5A-4BC1-8574-40F5142CE586}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

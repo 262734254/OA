@@ -1,0 +1,168 @@
+A:link {
+	COLOR: #0000ff; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #0000ff; TEXT-DECORATION: none
+}
+A:active {
+	COLOR: #3333ff; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #ff0000; TEXT-DECORATION: underline
+}
+BODY {
+	SCROLLBAR-FACE-COLOR: #87a6d2; FONT-SIZE: 9pt; SCROLLBAR-HIGHLIGHT-COLOR: #366ab3; SCROLLBAR-SHADOW-COLOR: #366ab3; SCROLLBAR-3DLIGHT-COLOR: #dce9f8; SCROLLBAR-ARROW-COLOR: #ffffff; SCROLLBAR-TRACK-COLOR: #eff5fc; FONT-FAMILY: Verdana; SCROLLBAR-DARKSHADOW-COLOR: #87a6d2
+}
+.tablestyle1 {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT-SIZE: 9pt; BORDER-LEFT: 0px; WIDTH: 100%; BORDER-BOTTOM: 0px; BACKGROUND-COLOR: #366ab3
+}
+.homepageline {
+	BACKGROUND-COLOR: #366ab3
+}
+.help_title {
+	FONT-WEIGHT: bold; FONT-SIZE: 11pt
+}
+.help_content {
+	FONT-SIZE: 10pt
+}
+.hr1 {
+	WIDTH: 99%; COLOR: #c2d8f2; HEIGHT: 3px; TEXT-ALIGN: left
+}
+.bodycolor {
+	BACKGROUND: #ffffff
+}
+.bodycolor2 {
+	BACKGROUND: #ffffff
+}
+.panel {
+	BACKGROUND: url(./images/index_19.jpg) #f1f6fc fixed no-repeat 50% top
+}
+.menu_top_mouse1 {
+	BACKGROUND-COLOR: #c2d8f2
+}
+.menu_top_mouse2 {
+	BACKGROUND-COLOR: #f1f6fc
+}
+.menu_top_mouse3 {
+	BACKGROUND-COLOR: #ffffff
+}
+.menu_operation_1 {
+	BACKGROUND-COLOR: #b3d1ff
+}
+.menu_operation_2 {
+	
+}
+.menu_operation_3 {
+	BACKGROUND-COLOR: #d9e8ff
+}
+.title1 {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT-SIZE: 9pt; BACKGROUND-IMAGE: url(./images/tablehdbg1.gif); BORDER-LEFT: 0px; WIDTH: 100%; COLOR: #264a7e; BORDER-BOTTOM: 0px; HEIGHT: 30px
+}
+.big {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; COLOR: #264a7e
+}
+.big1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; COLOR: #264a7e
+}
+.big2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; COLOR: #264a7e
+}
+.big3 {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; COLOR: #264a7e
+}
+.big4 {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; COLOR: #264a7e
+}
+.verybig {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; COLOR: #264a7e
+}
+.Message {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #ff3300
+}
+.sb_center_text {
+	CURSOR: hand; COLOR: #ffffff
+}
+.sb_online_text {
+	WIDTH: 100%; COLOR: #ffffff; TEXT-DECORATION: none
+}
+.sb_online_num {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT-WEIGHT: bold; BORDER-LEFT: 0px; WIDTH: 24pt; CURSOR: hand; COLOR: #ffffff; BORDER-BOTTOM: 0px; HEIGHT: 12pt; BACKGROUND-COLOR: transparent; TEXT-ALIGN: center
+}
+.small {
+	FONT-SIZE: 9pt
+}
+.small1 {
+	FONT-SIZE: 9pt
+}
+INPUT.SmallButton {
+	BORDER-RIGHT: #666666 1px solid; BORDER-TOP: #666666 1px solid; FONT-SIZE: 12px; BACKGROUND-IMAGE: url(./images/button_bg.gif); BORDER-LEFT: #666666 1px solid; BORDER-BOTTOM: #666666 1px solid; HEIGHT: 20px; BACKGROUND-COLOR: #ffffff
+}
+INPUT.BigButton {
+	BORDER-RIGHT: #666666 1px solid; BORDER-TOP: #666666 1px solid; FONT-SIZE: 12px; BACKGROUND-IMAGE: url(./images/button_bg.gif); BORDER-LEFT: #666666 1px solid; BORDER-BOTTOM: #666666 1px solid; HEIGHT: 20px; BACKGROUND-COLOR: #ffffff
+}
+INPUT.SmallInput {
+	BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; FONT-WEIGHT: normal; FONT-SIZE: 9pt; BACKGROUND: #f8f8f8; BORDER-LEFT: black 1px solid; COLOR: #000066; LINE-HEIGHT: normal; BORDER-BOTTOM: black 1px solid; FONT-STYLE: normal; HEIGHT: 18px; FONT-VARIANT: normal
+}
+INPUT.SmallInput1 {
+	BORDER-RIGHT: 0px; BORDER-TOP: black 1px solid; FONT-WEIGHT: normal; FONT-SIZE: 9pt; BACKGROUND: #f8f8f8; BORDER-LEFT: black 1px solid; COLOR: #000066; LINE-HEIGHT: normal; BORDER-BOTTOM: black 1px solid; FONT-STYLE: normal; HEIGHT: 18px; FONT-VARIANT: normal
+}
+INPUT.BigInput {
+	BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; FONT-WEIGHT: normal; FONT-SIZE: 9pt; BACKGROUND: #f8f8f8; BORDER-LEFT: black 1px solid; COLOR: #000066; LINE-HEIGHT: normal; BORDER-BOTTOM: 1px double; FONT-STYLE: normal; HEIGHT: 18px; FONT-VARIANT: normal
+}
+INPUT.BigInputMoney {
+	BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; FONT-WEIGHT: normal; FONT-SIZE: 9pt; BACKGROUND: #f8f8f8; BORDER-LEFT: black 1px solid; COLOR: #000066; LINE-HEIGHT: normal; BORDER-BOTTOM: 1px double; FONT-STYLE: normal; HEIGHT: 18px; TEXT-ALIGN: right; FONT-VARIANT: normal
+}
+INPUT.SmallStatic {
+	BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; FONT-WEIGHT: normal; FONT-SIZE: 9pt; BACKGROUND: #e0e0e0; BORDER-LEFT: black 1px solid; COLOR: #000066; LINE-HEIGHT: normal; BORDER-BOTTOM: black 1px solid; FONT-STYLE: normal; HEIGHT: 18px; FONT-VARIANT: normal
+}
+INPUT.BigStatic {
+	BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; FONT-WEIGHT: normal; FONT-SIZE: 9pt; BACKGROUND: #e0e0e0; BORDER-LEFT: black 1px solid; COLOR: #000066; LINE-HEIGHT: normal; BORDER-BOTTOM: 1px double; FONT-STYLE: normal; HEIGHT: 18px; FONT-VARIANT: normal
+}
+SELECT.BigSelect {
+	BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; FONT-WEIGHT: normal; FONT-SIZE: 9pt; BACKGROUND: #f8f8f8; BORDER-LEFT: black 1px solid; COLOR: #000066; LINE-HEIGHT: normal; BORDER-BOTTOM: 1px double; FONT-STYLE: normal; HEIGHT: 18px; FONT-VARIANT: normal
+}
+SELECT.SmallSelect {
+	BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; FONT-WEIGHT: normal; FONT-SIZE: 9pt; BACKGROUND: #f8f8f8; BORDER-LEFT: black 1px solid; COLOR: #000066; LINE-HEIGHT: normal; BORDER-BOTTOM: 1px double; FONT-STYLE: normal; HEIGHT: 18px; FONT-VARIANT: normal
+}
+SELECT.BigStatic {
+	BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; FONT-WEIGHT: normal; FONT-SIZE: 9pt; BACKGROUND: #e0e0e0; BORDER-LEFT: black 1px solid; COLOR: #000066; LINE-HEIGHT: normal; BORDER-BOTTOM: 1px double; FONT-STYLE: normal; HEIGHT: 18px; FONT-VARIANT: normal
+}
+SELECT.SmallStatic {
+	BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; FONT-WEIGHT: normal; FONT-SIZE: 9pt; BACKGROUND: #e0e0e0; BORDER-LEFT: black 1px solid; COLOR: #000066; LINE-HEIGHT: normal; BORDER-BOTTOM: black 1px solid; FONT-STYLE: normal; HEIGHT: 18px; FONT-VARIANT: normal
+}
+TEXTAREA.BigInput {
+	BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; FONT-WEIGHT: normal; FONT-SIZE: 9pt; BACKGROUND: #f8f8f8; BORDER-LEFT: black 1px solid; COLOR: #000066; LINE-HEIGHT: normal; BORDER-BOTTOM: 1px double; FONT-STYLE: normal; FONT-VARIANT: normal
+}
+TEXTAREA.BigStatic {
+	BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; FONT-WEIGHT: normal; FONT-SIZE: 9pt; BACKGROUND: #e0e0e0; BORDER-LEFT: black 1px solid; COLOR: #000066; LINE-HEIGHT: normal; BORDER-BOTTOM: 1px double; FONT-STYLE: normal; FONT-VARIANT: normal
+}
+.TableControl {
+	BACKGROUND: #eff7ff
+}
+.TableHeader {
+	FONT-WEIGHT: bold; BACKGROUND: url(./images/header_bg.jpg) #d3e5fa; COLOR: #ffffff
+}
+.TableHeader1 {
+	BACKGROUND: url(./images/header_bg.jpg) #d3e5fa; CURSOR: hand; COLOR: #ffffff
+}
+.TableContent {
+	BACKGROUND: #e2e8fa
+}
+.TableData {
+	FONT-SIZE: 10pt; BACKGROUND: #ffffff
+}
+.TableLine1 {
+	BACKGROUND: #f3f3f3
+}
+.TableLine2 {
+	BACKGROUND: #ffffff
+}
+.deletebg {
+	BORDER-RIGHT: black 0px solid; BORDER-TOP: black 0px solid; FONT-SIZE: 12px; BORDER-LEFT: black 0px solid; BORDER-BOTTOM: #000000 0px solid; FONT-FAMILY: "ËÎÌו"; TEXT-ALIGN: center
+}
+.querybg {
+	BORDER-RIGHT: black 0px solid; BORDER-TOP: black 0px solid; FONT-SIZE: 12px; BORDER-LEFT: black 0px solid; BORDER-BOTTOM: #000000 1px solid; FONT-FAMILY: "ËÎÌו"
+}
+.toolbutton {
+	BORDER-RIGHT: #104a7b 1px solid; BORDER-TOP: #afc4d5 1px solid; FONT-SIZE: 10pt; BACKGROUND: url(/images/button_back.gif) #d6e7ef; MARGIN: 0pt; BORDER-LEFT: #afc4d5 1px solid; WIDTH: 60pt; CURSOR: hand; COLOR: #000066; BORDER-BOTTOM: #104a7b 1px solid; HEIGHT: 18px; TEXT-DECORATION: none
+}

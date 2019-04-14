@@ -1,0 +1,5 @@
+D:\OA\Common\Common\bin\Debug\Common.dll
+D:\OA\Common\Common\bin\Debug\Common.pdb
+D:\OA\Common\Common\obj\Debug\ResolveAssemblyReference.cache
+D:\OA\Common\Common\obj\Debug\Common.dll
+D:\OA\Common\Common\obj\Debug\Common.pdb

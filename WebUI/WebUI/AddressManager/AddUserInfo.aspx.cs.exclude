@@ -1,0 +1,61 @@
+﻿using System;
+using System.Collections;
+using System.Configuration;
+using System.Data;
+using System.Linq;
+using System.Web;
+using System.Web.Security;
+using System.Web.UI;
+using System.Web.UI.HtmlControls;
+using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
+using System.Xml.Linq;
+using Model;
+using BLL.WorkHelper;
+using BLL.Power;
+public partial class AddressManager_UserInfo : System.Web.UI.Page
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+
+    }
+
+    protected void btnSave_Click(object sender, EventArgs e)
+    {
+        //UserInfo user = Session["user"] as UserInfo;
+
+        //Model.Address address = new Address();
+       
+        //address.FriendUserId.Name = txtName.Text.Trim();
+        //address.FriendUserId.Age =Convert.ToInt32(txtAge.Text.Trim());
+        //address.FriendUserId.Address = txtAddress.Text.Trim();
+        //address.FriendUserId.Department.Departmentname = drobrach.SelectedValue;
+        //address.FriendUserId.Email = txtEmail.Text.Trim();
+        //address.FriendUserId.Qq = Convert.ToInt32(txtQQ.Text.Trim());
+        //if (this.rdoboy.Checked)
+        //{
+        //    address.FriendUserId.Sex = "男";
+        //}
+        //if (this.rdogirl.Checked)
+        //{
+        //    address.FriendUserId.Sex = "女";
+        //}
+        //address.FriendUserId.MobilePhone =Convert.ToInt32(txtPhone.Text.Trim());
+        //address.FriendUserId.HomePhone = txtSeat.Text.Trim();
+        //address.FriendUserId.IdentityCard = txtIDcard.Text.Trim();
+        //address.FriendUserId.Msn = txtMSN.Text.Trim();
+        //address.FriendUserId.Remark = txtRemark.Text.Trim();
+
+        //int flag = AddressManager.AddAddress(address);
+        //if (flag > 0)
+        //{
+        //    Page.ClientScript.RegisterStartupScript(this.GetType(), "", "<script>alert('添加成功！');location.href='SelectCalender.aspx';</script>");
+          
+        //    Response.Redirect("SelectCalender.aspx");
+        //}
+        //else
+        //{
+        //    Page.ClientScript.RegisterStartupScript(this.GetType(), "", "<script>alert('添加失败！');</script>");
+        //}
+    }
+}

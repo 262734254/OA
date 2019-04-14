@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="" title="管理目录"  description="">
+	  <siteMapNode  title="会议管理"  description="none" Target="main" IconUrl="images/tree_27.gif">
+		  <siteMapNode url="~/MeetingManager/ApplictionMeetingList.aspx" title="会议管理" description="会议管理" Leaf="true"  IconUrl="images/tree_12.gif"/>
+		  <siteMapNode url="~/MeetingManager/SelMeeting.aspx" title="查看会议纪要" description="查看会议纪要" Leaf="true" Target="main" IconUrl="images/tree_12.gif"/>
+		  <siteMapNode url="~/MeetingManager/SelMeetingRome.aspx" title="会议室信息" description="会议室信息" Leaf="true" Target="main" IconUrl="images/tree_12.gif"/>
+	  </siteMapNode>
+
+	
+     <siteMapNode  title="车辆管理"  description="none" IconUrl="images/tree_27.gif">
+       <siteMapNode url="~/CarManager/carslist.aspx" title="车辆档案管理" description="" Leaf="true" Target="main" IconUrl="images/tree_12.gif"/>
+       <siteMapNode url="~/CarManager/byapply.aspx" title="用车申请" description="" Leaf="true" Target="main" IconUrl="images/tree_12.gif"/>
+       <siteMapNode url="~/CarManager/buyApply.aspx" title="购车申请" description="" Leaf="true" Target="main" IconUrl="images/tree_12.gif"/>
+       <siteMapNode url="~/CarManager/Davnotelist.aspx" title="出车管理" description="" Leaf="true" Target="main" IconUrl="images/tree_12.gif"/>
+       <siteMapNode url="~/CarManager/Enter.aspx" title="回车登记" description="" Leaf="true" Target="main" IconUrl="images/tree_12.gif"/>
+       <siteMapNode url="~/CarManager/driverInfo.aspx" title="驾驶员信息" description="" Leaf="true" Target="main" IconUrl="images/tree_12.gif"/>
+       <siteMapNode url="~/CarManager/MyApply.aspx" title="车辆申请记录" description="" Leaf="true" Target="main" IconUrl="images/tree_12.gif"/>
+       <siteMapNode url="~/CarManager/MyGouCheApply.aspx" title="购车申请记录" description="" Leaf="true" Target="main" IconUrl="images/tree_12.gif"/>
+		  <siteMapNode url="~/CarManager/Cheerlist.aspx" title="加油管理" description="" Leaf="true" Target="main" IconUrl="images/tree_12.gif"/>
+		  <siteMapNode url="~/CarManager/Servicelist.aspx" title="维修管理" description="" Leaf="true" Target="main" IconUrl="images/tree_12.gif"/>
+		  <siteMapNode url="~/CarManager/DisobeyRecordlist.aspx" title="违章事故管理" description="" Leaf="true" Target="main" IconUrl="images/tree_12.gif"/>
+		  <siteMapNode url="~/CarManager/ElseCostlist.aspx" title="费用管理" description="" Leaf="true" Target="main" IconUrl="images/tree_12.gif"/>
+	  </siteMapNode>
+    <siteMapNode  title="资源管理"  description="none" Target="main" IconUrl="images/tree_27.gif">
+      <!--<siteMapNode  title="资源室管理"  description="none" Target="main" IconUrl="images/tree_27.gif">
+        <siteMapNode url="~/ResourceManager/ResourceStoreManager/ResourceStore.aspx" title="新增资料室" description="" Leaf="true" Target="main" IconUrl="images/tree_12.gif"/>
+        <siteMapNode url="~/ResourceManager/ResourceStoreManager/SearchResourceStore.aspx" title="资料室列表" description="" Leaf="true" Target="main" IconUrl="images/tree_12.gif"/>
+      </siteMapNode>
+      <siteMapNode  title="供应商管理"  description="none" Target="main" IconUrl="images/tree_27.gif">
+        <siteMapNode url="~/ResourceManager/ProviderManager/NewProvider.aspx" title="新增供应商" description="" Leaf="true" Target="main" IconUrl="images/tree_12.gif"/>
+        <siteMapNode url="~/ResourceManager/ProviderManager/ProviderList.aspx" title="供应商列表" description="" Leaf="true" Target="main" IconUrl="images/tree_12.gif"/>
+      </siteMapNode>
+      <siteMapNode  title="资源类型管理"  description="none" Target="main" IconUrl="images/tree_27.gif">
+        <siteMapNode url="~/ResourceManager/ResourceTypeManager/ResourceType.aspx" title="新增资源类型" description="" Leaf="true" Target="main" IconUrl="images/tree_12.gif"/>
+        <siteMapNode url="~/ResourceManager/ResourceTypeManager/ResourceTypeList.aspx" title="资源类型列表" description="" Leaf="true" Target="main" IconUrl="images/tree_12.gif"/>
+      </siteMapNode>-->
+      <siteMapNode url="~/ResourceManager/ResourceInfoList.aspx" title="资源信息查询" description="" Leaf="true" Target="main" IconUrl="images/tree_12.gif"/>
+      <siteMapNode url="~/ResourceManager/UseList.aspx" title="资源使用记录查询" description="" Leaf="true" Target="main" IconUrl="images/tree_12.gif"/>
+      <siteMapNode url="~/ResourceManager/ApplyBorrow.aspx" title="资源借用申请" description="" Leaf="true" Target="main" IconUrl="images/tree_12.gif"/>
+      <siteMapNode url="~/ResourceManager/ApplyStock.aspx" title="资源采购申请" description="" Leaf="true" Target="main" IconUrl="images/tree_12.gif"/>
+      <siteMapNode url="~/ResourceManager/ReturnBack.aspx" title="资源归还录入" description="" Leaf="true" Target="main" IconUrl="images/tree_12.gif"/>
+      <siteMapNode url="~/ResourceManager/Damage.aspx" title="资源损耗记录" description="" Leaf="true" Target="main" IconUrl="images/tree_12.gif"/>
+      <siteMapNode url="~/ResourceManager/ApplyStockList.aspx" title="历史采购单查询" description="" Leaf="true" Target="main" IconUrl="images/tree_12.gif"/>
+    </siteMapNode>
+
+	  <siteMapNode  title="待办事宜"  description="none" Target="main" IconUrl="images/tree_27.gif">
+		  <siteMapNode url="~/PedingMatter/Matter.aspx" title="我的事宜" description="" Leaf="true" Target="main" IconUrl="images/tree_12.gif"/>
+		  <siteMapNode url="~/PedingMatter/CheckNote.aspx" title="我的审批记录" description="" Leaf="true" Target="main" IconUrl="images/tree_12.gif"/>
+		 </siteMapNode>
+
+    <siteMapNode title="重点任务管理"  description="none" Target="main" IconUrl="images/tree_27.gif">
+      <siteMapNode url="~/TaskManager/AddTask.aspx" title="重点任务目标下达和保存" description="" Leaf="true" Target="main" IconUrl="images/tree_12.gif"/>
+      <siteMapNode url="~/TaskManager/TaskPlan.aspx" title="任务目标进度统计" description="" Leaf="true" Target="main" IconUrl="images/tree_12.gif"/>
+      <siteMapNode url="~/TaskManager/SearchTask.aspx" title="查询重点任务目标" description="" Leaf="true" Target="main" IconUrl="images/tree_12.gif"/>
+      <siteMapNode url="~/TaskManager/UpdateTask.aspx" title="修改重点任务目标" description="" Leaf="true" Target="main" IconUrl="images/tree_12.gif"/>
+      <siteMapNode url="~/TaskManager/TaskDetails.aspx" title="重点任务目标详情" description="" Leaf="true" Target="main" IconUrl="images/tree_12.gif"/>
+      <siteMapNode url="~/TaskManager/TaskPart.aspx" title="重点任务目标阶段查看" description="" Leaf="true" Target="main" IconUrl="images/tree_12.gif"/>
+    </siteMapNode>
+    
+	  <siteMapNode title="办公助手"  description="none" Target="main" IconUrl="images/tree_27.gif">
+		  <siteMapNode url="~/Calendar/MyCalender.aspx" title="日程安排" description="" Leaf="true" Target="main" IconUrl="images/tree_12.gif"/>
+		  <siteMapNode url="~/LeaveMessage/ShowMessage.aspx" title="留言薄" description="" Leaf="true" Target="main" IconUrl="images/tree_12.gif"/>
+		  <siteMapNode url="~/AddressManager/Userlist.aspx" title="通讯录" description="" Leaf="true" Target="main" IconUrl="images/tree_12.gif"/>
+	  </siteMapNode>
+
+    <siteMapNode title="权限管理"  description="none" Target="main" IconUrl="images/tree_27.gif">
+      <siteMapNode url="~/PowerManager/Role/RoleList.aspx" title="角色管理" description="" Leaf="true" Target="main" IconUrl="images/tree_12.gif"/>
+      <siteMapNode url="~/PowerManager/User/UserList.aspx" title="用户管理" description="" Leaf="true" Target="main" IconUrl="images/tree_12.gif"/>
+    </siteMapNode>     
+     
+	  <siteMapNode  title="相关报表打印"  description="none" Target="main" IconUrl="images/tree_27.gif">
+		  <siteMapNode url="~/ReportManager/Sumaryreport.aspx" title="会议纪要报表" description="" Leaf="true" Target="main" IconUrl="images/tree_12.gif"/>
+		  <siteMapNode url="~/ReportManager/CarRateReport.aspx" title="车辆费用报表" description="" Leaf="true" Target="main" IconUrl="images/tree_12.gif"/>
+		  <siteMapNode url="~/ReportManager/ResbrrorwReport.aspx" title="资源借用报表" description="" Leaf="true" Target="main" IconUrl="images/tree_12.gif"/>
+		  <siteMapNode url="~/ReportManager/Stockreport.aspx" title="采购单报表" description="" Leaf="true" Target="main" IconUrl="images/tree_12.gif"/>
+      <siteMapNode url="~/TaskManager/PrintTask.aspx" title="任务报表打印" description="" Leaf="true" Target="main" IconUrl="images/tree_12.gif"/>
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

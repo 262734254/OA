@@ -1,0 +1,13 @@
+D:\OA\BLL\bin\Debug\BLL.dll
+D:\OA\BLL\bin\Debug\BLL.pdb
+D:\OA\BLL\bin\Debug\IDAL.dll
+D:\OA\BLL\bin\Debug\Model.dll
+D:\OA\BLL\bin\Debug\OALFactory.dll
+D:\OA\BLL\bin\Debug\DAL.dll
+D:\OA\BLL\bin\Debug\Model.pdb
+D:\OA\BLL\bin\Debug\IDAL.pdb
+D:\OA\BLL\bin\Debug\OALFactory.pdb
+D:\OA\BLL\bin\Debug\DAL.pdb
+D:\OA\BLL\obj\Debug\ResolveAssemblyReference.cache
+D:\OA\BLL\obj\Debug\BLL.dll
+D:\OA\BLL\obj\Debug\BLL.pdb

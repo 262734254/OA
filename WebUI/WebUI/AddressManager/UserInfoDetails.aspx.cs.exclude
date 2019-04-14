@@ -1,0 +1,62 @@
+﻿using System;
+using System.Collections;
+using System.Configuration;
+using System.Data;
+using System.Linq;
+using System.Web;
+using System.Web.Security;
+using System.Web.UI;
+using System.Web.UI.HtmlControls;
+using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
+using System.Xml.Linq;
+using Model;
+using BLL.WorkHelper;
+using BLL.Power;
+public partial class AddressManager_UserInfoDetails : System.Web.UI.Page
+{
+    static int Id;
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        if (!IsPostBack)
+        {
+            //if (!string.IsNullOrEmpty(Request.QueryString["SelfUserId.UId"].ToString()))
+            //{
+            //    Id = Convert.ToInt32(Request.QueryString["SelfUserId.UId"]);
+            //    Bind();
+            //}
+
+            UserInfo user = new UserInfo();
+            if (Session["user"] != null)
+                user = (UserInfo)Session["user"];
+            else
+                Response.Redirect("../Login.aspx");
+            UserInfo friend = new UserInfo();
+            friend.UID = Convert.ToInt32(Request.QueryString["friendid"]);
+            friend = UserInfoManager.GetAllUserById(friend.UID);
+            this.txtName.Text = friend.Name;
+            txtAge.Text = friend.Age.ToString();
+            txtQq.Text = friend.Qq.ToString();
+            if (friend.Sex.Trim() == "男")
+            {
+                this.rdoSex.SelectedIndex = 0;
+            }
+            else
+            {
+                this.rdoSex.SelectedIndex = 1;
+            }
+            txtMobilePhone.Text = friend.MobilePhone.ToString();
+            txtHomePhone.Text = friend.HomePhone;
+            dropDepartment.SelectedValue = friend.Department.Id.ToString();
+            txtEmail.Text = friend.Email;
+            txtMsn.Text = friend.Msn;
+            txtCard.Text = friend.IdentityCard;
+            txtAddress.Text = friend.Address;
+            txtRemark.Text = friend.Remark;
+            
+        }
+       
+    }
+ 
+
+}

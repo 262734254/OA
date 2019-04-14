@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A5C98A57-41DB-4145-A315-39719B3A2E22}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BLL</RootNamespace>
+    <AssemblyName>BLL</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxPro.2, Version=6.7.20.1, Culture=neutral, PublicKeyToken=4735ae9824c7d3ec, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\新建文件夹 (2)\WebSite1\Bin\AjaxPro.2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Car\CarBuyApplyManager.cs" />
+    <Compile Include="Car\CarByapplyManager.cs" />
+    <Compile Include="Car\CarDavnoteManager.cs" />
+    <Compile Include="Car\CarEnterManager.cs" />
+    <Compile Include="Car\CarsManager.cs" />
+    <Compile Include="Car\CarTypeManager.cs" />
+    <Compile Include="Car\CarUserInfoManager.cs" />
+    <Compile Include="Car\CheerManager.cs" />
+    <Compile Include="Car\CostSuperviseManager.cs" />
+    <Compile Include="Car\DisobeyRecordManager.cs" />
+    <Compile Include="Car\ServicesManager.cs" />
+    <Compile Include="Matter\ExamineManager.cs" />
+    <Compile Include="Meeting\MeetingApplicationManager.cs" />
+    <Compile Include="Meeting\MeetingSummaryManager.cs" />
+    <Compile Include="Meeting\RoomArrageManager.cs" />
+    <Compile Include="Meeting\RoomInfoManager.cs" />
+    <Compile Include="Power\DepartmentManager.cs" />
+    <Compile Include="Power\UserInfoManager.cs" />
+    <Compile Include="Power\RolePowerManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resource\ApplicationResourceManager.cs" />
+    <Compile Include="Resource\BorrowApplicationManager.cs" />
+    <Compile Include="Resource\ProviderInfoManager.cs" />
+    <Compile Include="Resource\ResourceInfoManager.cs" />
+    <Compile Include="Resource\ResourceRestoreManager.cs" />
+    <Compile Include="Resource\ResourceStoreManager.cs" />
+    <Compile Include="Resource\ResourceTypeManager.cs" />
+    <Compile Include="Resource\SpoilageRegisterManager.cs" />
+    <Compile Include="Resource\StockApplicationManager.cs" />
+    <Compile Include="Target\TaskManager.cs" />
+    <Compile Include="WorkHelper\AddressManager.cs" />
+    <Compile Include="WorkHelper\CalendarManager.cs" />
+    <Compile Include="WorkHelper\LeaveWordManager.cs" />
+    <Compile Include="WorkHelper\MessageTypeManger.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IDAL\IDAL.csproj">
+      <Project>{91F0FFEB-919B-44A7-BFF5-8ADDFCBF0938}</Project>
+      <Name>IDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{D3866CA7-3D5A-4BC1-8574-40F5142CE586}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OAFactory\OAFactory.csproj">
+      <Project>{B38EFC0B-E52A-4F79-B5C9-AA1AF0C73523}</Project>
+      <Name>OAFactory</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

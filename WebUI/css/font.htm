@@ -1,0 +1,592 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0043)http://www16.mail.sohu.com/body/html_editor -->
+<HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=gb2312"><LINK 
+href="html_editor.files/html_editor.css" type=text/css rel=stylesheet>
+<SCRIPT language=javascript>
+
+var targetDoc;
+
+public_description = new editor;
+
+function editor()
+
+{
+
+ this.get_contents = GetContents;
+
+ this.get_oritext = GetOritext;
+
+ this.get_plaincontents = GetPlainContents;
+
+ this.get_allplaincontents = GetAllPlainContents;
+ this.get_allhtmlcontents = GetAllHtmlContents;
+ this.put_contents = PutContents;
+
+}
+
+
+
+function Window_OnLoad() {
+
+  var MenuItems = new Array(8);
+
+  MenuItems[0] = "剪切";
+
+  MenuItems[1] = "DoCut";
+
+  MenuItems[2] = "复制"; 
+
+  MenuItems[3] = "DoCopy";
+
+  MenuItems[4] = "粘贴";
+
+  MenuItems[5] = "DoPaste";
+
+  MenuItems[6] = "全选";
+
+  MenuItems[7] = "DoSelectAll";
+
+ // window.external.setContextMenu(MenuItems);
+
+}
+
+
+
+function DoCut() {
+
+  target.document.execCommand("Cut", false, null);
+
+}
+
+
+
+function DoCopy() {
+
+  target.document.execCommand("Copy", false, null);
+
+}
+
+
+
+function DoPaste() {
+
+  target.document.execCommand("Paste", false, null);
+
+}
+
+
+
+function DoSelectAll() {
+
+  target.document.execCommand("SelectAll", false, null);
+
+}
+
+
+
+function GetContents() {
+
+  if (target.document.all["cdiv"]!=null) return target.document.all["cdiv"].innerHTML;
+
+  else return target.document.body.innerHTML;
+
+}
+
+
+
+function GetOritext(){
+
+  if (target.document.all["ori"]!=null) return target.document.all["ori"].innerText;
+
+  else return null;
+
+}
+
+
+
+function GetPlainContents()
+
+{
+
+  if (target.document.all["cdiv"]!=null) return target.document.all["cdiv"].innerText;
+
+  else return target.document.body.innerText;
+
+}
+
+
+
+function GetAllPlainContents()
+
+{
+
+  return target.document.body.innerText;
+
+}
+
+
+function GetAllHtmlContents() 
+{
+  return target.document.body.innerHTML;
+}
+
+
+
+function PutContents(contents)
+
+{
+
+  targetDoc.designMode = "On";
+
+  if (target.document.all["cdiv"]!=null) target.document.all["cdiv"].innerHTML = contents;
+
+  else target.document.body.innerHTML = contents;
+
+}
+
+
+
+function cleanHtml() {
+
+  var fonts = target.document.body.all.tags("FONT");
+
+  var curr;
+
+  for (var i = fonts.length - 1; i >= 0; i--) {
+
+    curr = fonts[i];
+
+    if (curr.style.backgroundColor == "#ffffff") curr.outerHTML = curr.innerHTML;
+
+  }
+
+}
+
+
+
+function setMode(newMode) {
+
+  bTextMode = newMode;
+
+  var cont;
+
+  if (bTextMode) {
+
+    cleanHtml();
+
+    cleanHtml();
+
+
+
+    cont=target.document.body.innerHTML;
+
+    target.document.body.innerText=cont;
+
+  } else {
+
+    cont=target.document.body.innerText;
+
+    target.document.body.innerHTML=cont;
+
+  }
+
+  target.focus();
+
+}
+
+
+
+function onFontName(value)
+
+{
+
+  targetDoc.execCommand('FontName', '', value);
+
+  target.focus();
+
+}
+
+
+
+function onFontSize(value)
+
+{
+
+  targetDoc.execCommand('FontSize', '', value);
+
+  target.focus();
+
+}
+
+
+
+function onColor(value)
+
+{
+
+  targetDoc.execCommand('forecolor','',value);
+
+  target.focus();
+
+}
+
+
+
+function onBKColor(value)
+
+{
+
+  targetDoc.execCommand('backcolor','',value);
+
+  target.focus();
+
+}
+
+
+
+function onBold()
+
+{
+
+  targetDoc.execCommand('Bold');
+
+  target.focus();
+
+}
+
+
+
+function onItalic()
+
+{
+
+  targetDoc.execCommand('Italic');
+
+  target.focus();
+
+}
+
+
+
+function onUnderLine()
+
+{
+
+  targetDoc.execCommand('Underline');
+
+  target.focus();
+
+}
+
+
+
+function onALeft()
+
+{
+
+  targetDoc.execCommand('JustifyLeft');
+
+  target.focus();
+
+}
+
+
+
+function onACenter()
+
+{
+
+  targetDoc.execCommand('JustifyCenter');
+
+  target.focus();
+
+}
+
+
+
+function onARight()
+
+{
+
+  targetDoc.execCommand('JustifyRight');
+
+  target.focus();
+
+}
+
+
+
+function onNList()
+
+{
+
+  targetDoc.execCommand('InsertOrderedList');
+
+  target.focus();
+
+}
+
+
+
+function onBList()
+
+{
+
+  targetDoc.execCommand('InsertUnorderedList');
+
+  target.focus();
+
+}
+
+
+
+function onOutDent()
+
+{
+
+  targetDoc.execCommand('Outdent');
+
+  target.focus();
+
+}
+
+
+
+function onInDent()
+
+{
+
+  targetDoc.execCommand('Indent');
+
+  target.focus();
+
+}
+
+
+
+function getElem(sTag,start)
+
+{
+
+  while ((start != null) && (start.tagName != sTag)) start = start.parentElement;
+
+  return start;
+
+}
+
+
+
+function onHyperLink()
+
+{
+
+  var DoA = getElem("A",targetDoc.selection.createRange().parentElement());
+
+  var str = prompt("请输入超链接地址(例如http://www.sohu.com):", DoA ? DoA.href : "http:\/\/");
+
+
+
+  if ((str != null) && (str != "http://"))
+
+    {
+
+      if (targetDoc.selection.type == "None")
+
+	{
+
+	  var sel = targetDoc.selection.createRange();
+
+	  sel.pasteHTML("<A HREF=\""+str+"\">"+str+"</A> ");
+
+	  sel.select();
+
+	}
+
+      else
+
+	{
+
+	  targetDoc.execCommand('CreateLink','',str);
+
+	}
+  }
+  else target.focus();
+}
+function onImage()
+
+{
+
+  var DoA = getElem("A",targetDoc.selection.createRange().parentElement());
+
+  CommonDialogSelectFile.ShowOpen();
+  var str = CommonDialogSelectFile.FileName;
+  if ((str != null) && (str != "http://"))
+
+    {
+
+      if (targetDoc.selection.type == "None")
+
+	{
+
+	  var sel = targetDoc.selection.createRange();
+
+	  sel.pasteHTML("<img src=\""+str+"\">");
+
+	  sel.select();
+
+	}
+
+      else
+
+	{
+
+	  targetDoc.execCommand('InsertImage','',str);
+
+	}
+
+    }
+
+  else target.focus();
+
+}
+
+
+
+</SCRIPT>
+
+<META content="Microsoft FrontPage 4.0" name=GENERATOR></HEAD>
+<BODY onload=Window_OnLoad()>
+<DIV class=BAR id=FormatToolbar1><SELECT language=javascript class=GEN 
+id=FontName title=字体 style="WIDTH: 110px" 
+onchange=onFontName(this[this.selectedIndex].value);> <OPTION value="" 
+  selected>字体</OPTION> <OPTION value=宋体>宋体</OPTION> <OPTION value=黑体>黑体</OPTION> 
+  <OPTION value=楷体_GB2312>楷体</OPTION> <OPTION value=仿宋_GB2312>仿宋</OPTION> 
+  <OPTION value="MS Song">MS宋体</OPTION> <OPTION value="MS Hei">MS黑体</OPTION> 
+  <OPTION value=MingLiU>MingLiU</OPTION> <OPTION value=Arial>Arial</OPTION> 
+  <OPTION value="Arial Black">Arial Black</OPTION> <OPTION 
+  value="Arial Narrow">Arial Narrow</OPTION> <OPTION 
+  value="Bradley Hand ITC">Bradley Hand ITC</OPTION> <OPTION 
+  value="Brush Script MT">Brush Script MT</OPTION> <OPTION 
+  value="Century Gothic">Century Gothic</OPTION> <OPTION 
+  value="Comic Sans MS">Comic Sans MS</OPTION> <OPTION 
+  value=Courier>Courier</OPTION> <OPTION value="Courier New">Courier New</OPTION> <OPTION value="MS Sans Serif">MS 
+    Sans Serif</OPTION> <OPTION 
+  value=Script>Script</OPTION> <OPTION value=System>System</OPTION> <OPTION 
+  value="Times New Roman">Times New Roman</OPTION> <OPTION 
+  value="Viner Hand ITC">Viner Hand ITC</OPTION> <OPTION 
+  value=Verdana>Verdana</OPTION> <OPTION value="Wide Latin">Wide Latin</OPTION> 
+  <OPTION value=Wingdings>Wingdings</OPTION></SELECT> <SELECT language=javascript  
+class=GEN id=FontSize title=字号 
+onchange=onFontSize(this[this.selectedIndex].value);> <OPTION value="" 
+  selected>字号</OPTION> <OPTION value=1>1</OPTION> <OPTION value=2>2</OPTION> 
+  <OPTION value=3>3</OPTION> <OPTION value=4>4</OPTION> <OPTION 
+  value=5>5</OPTION> <OPTION value=6>6</OPTION> <OPTION 
+value=7>7</OPTION></SELECT> 
+<DIV language=javascript class=BTN id=BTN_BOLD title=粗体 
+onclick="return onBold()"><IMG class=ICO height=22 
+src="html_editor.files/bold.gif" width=22> </DIV>
+<DIV language=javascript class=BTN id=BTN_ITALIC title=斜体 
+onclick="return onItalic()"><IMG class=ICO height=22 
+src="html_editor.files/italic.gif" width=22> </DIV>
+<DIV language=javascript class=BTN id=BTN_UNDERLINE title=下划线 
+onclick="return onUnderLine()"><IMG class=ICO height=22 
+src="html_editor.files/under.gif" width=22> </DIV><SELECT language=javascript 
+class=GEN id=ForeColor title=字色 
+onchange=onColor(this[this.selectedIndex].value);> <OPTION value="" 
+  selected>字色</OPTION> <OPTION value=red>红色</OPTION> <OPTION 
+  value=blue>蓝色</OPTION> <OPTION value=green>绿色</OPTION> <OPTION 
+  value=yellow>黄色</OPTION> <OPTION value=pink>粉红</OPTION> <OPTION 
+  value=cyan>天青</OPTION> <OPTION value=white>白色</OPTION> <OPTION 
+  value=darkred>深红</OPTION> <OPTION value=darkblue>深蓝</OPTION> <OPTION 
+  value=darkgreen>深绿</OPTION> <OPTION value=gold>金色</OPTION> <OPTION 
+  value=darkcyan>蓝绿</OPTION> <OPTION value=gray>浅灰</OPTION> <OPTION 
+  value=black>黑色</OPTION></SELECT> <SELECT language=javascript class=GEN  
+id=BkColor title=背景色 onchange=onBKColor(this[this.selectedIndex].value);> 
+  <OPTION value="" selected>背景色<OPTION value=red>红色</OPTION> <OPTION 
+  value=blue>蓝色</OPTION> <OPTION value=green>绿色</OPTION> <OPTION 
+  value=yellow>黄色</OPTION> <OPTION value=pink>粉红</OPTION> <OPTION 
+  value=cyan>天青</OPTION> <OPTION value=white>白色</OPTION> <OPTION 
+  value=darkred>深红</OPTION> <OPTION value=darkblue>深蓝</OPTION> <OPTION 
+  value=darkgreen>深绿</OPTION> <OPTION value=gold>金色</OPTION> <OPTION 
+  value=darkcyan>蓝绿</OPTION> <OPTION value=gray>浅灰</OPTION> <OPTION 
+  value=black>黑色</OPTION></SELECT> </DIV>
+<DIV class=BAR id=FormatToolbar2>
+<DIV language=javascript class=BTN id=BTN_ALEFT title=左对齐 
+onclick="return onALeft()" NAME="Justify"><IMG class=ICO height=22 
+src="html_editor.files/aleft.gif" width=22> </DIV>
+<DIV language=javascript class=BTN id=BTN_ACENTER title=居中 
+onclick="return onACenter()" NAME="Justify"><IMG class=ICO height=22 
+src="html_editor.files/center.gif" width=22> </DIV>
+<DIV language=javascript class=BTN id=BTN_ARIGHT title=右对齐 
+onclick="return onARight()" NAME="Justify"><IMG class=ICO height=22 
+src="html_editor.files/aright.gif" width=22> </DIV>
+<DIV class=SEP></DIV>
+<DIV language=javascript class=BTN id=BTN_NLIST title=数字编号 
+onclick="return onNList()"><IMG class=ICO height=22 
+src="html_editor.files/nlist.gif" width=22> </DIV>
+<DIV language=javascript class=BTN id=BTN_BLIST title=项目符号 
+onclick="return onBList()"><IMG class=ICO height=22 
+src="html_editor.files/blist.gif" width=22> </DIV>
+<DIV language=javascript class=BTN id=BTN_OUTDENT title=减小缩进 
+onclick="return onOutDent()"><IMG class=ICO height=22 
+src="html_editor.files/ileft.gif" width=22> </DIV>
+<DIV language=javascript class=BTN id=BTN_INDENT title=增加缩进 
+onclick="return onInDent()"><IMG class=ICO height=22 
+src="html_editor.files/iright.gif" width=22> </DIV>
+<DIV class=SEP></DIV>
+<DIV language=javascript class=BTN id=BTN_HYPERLINK title=插入超级链接 
+onclick="return onHyperLink()"><IMG class=ICO height=22 
+src="html_editor.files/wlink.gif" width=22> </DIV>
+<DIV language=javascript class=BTN id=BTN_IMAGE title=插入图片 
+onclick="return onImage()"><IMG class=ICO height=22 
+src="html_editor.files/img.gif" width=22> </DIV></DIV>
+<DIV class=tbContentElement id=tbContentElement><IFRAME id=target 
+style="WIDTH: 100%; HEIGHT: 100%" name=target marginWidth=1 src="about:blank" 
+scrolling=yes>
+
+</IFRAME><BR></DIV>
+<SCRIPT language=Javascript src="html_editor.files/Html_Editor.js">
+
+</SCRIPT>
+
+<SCRIPT>
+
+targetDoc = document.frames.target.document;
+
+targetDoc.designMode = "On";
+</SCRIPT>
+
+<object classid="clsid:F9043C85-F6F2-101A-A3C9-08002B2F49FB" id="CommonDialogSelectFile" width="32" height="32">
+  <param name="_ExtentX" value="847">
+  <param name="_ExtentY" value="847">
+  <param name="_Version" value="393216">
+  <param name="CancelError" value="0">
+  <param name="Color" value="0">
+  <param name="Copies" value="1">
+  <param name="DefaultExt" value>
+  <param name="DialogTitle" value>
+  <param name="FileName" value>
+  <param name="Filter" value>
+  <param name="FilterIndex" value="0">
+  <param name="Flags" value="1">
+  <param name="FontBold" value="0">
+  <param name="FontItalic" value="0">
+  <param name="FontName" value>
+  <param name="FontSize" value="8">
+  <param name="FontStrikeThru" value="0">
+  <param name="FontUnderLine" value="0">
+  <param name="FromPage" value="0">
+  <param name="HelpCommand" value="0">
+  <param name="HelpContext" value="0">
+  <param name="HelpFile" value>
+  <param name="HelpKey" value>
+  <param name="InitDir" value>
+  <param name="Max" value="0">
+  <param name="Min" value="0">
+  <param name="MaxFileSize" value="260">
+  <param name="PrinterDefault" value="1">
+  <param name="ToPage" value="0">
+  <param name="Orientation" value="1">
+</object>
+</BODY></HTML>

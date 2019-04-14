@@ -1,0 +1,7 @@
+D:\OA\IDAL\bin\Debug\IDAL.dll
+D:\OA\IDAL\bin\Debug\IDAL.pdb
+D:\OA\IDAL\bin\Debug\Model.dll
+D:\OA\IDAL\bin\Debug\Model.pdb
+D:\OA\IDAL\obj\Debug\ResolveAssemblyReference.cache
+D:\OA\IDAL\obj\Debug\IDAL.dll
+D:\OA\IDAL\obj\Debug\IDAL.pdb

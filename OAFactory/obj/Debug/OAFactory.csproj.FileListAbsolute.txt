@@ -1,0 +1,11 @@
+D:\OA\OAFactory\bin\Debug\OALFactory.dll
+D:\OA\OAFactory\bin\Debug\OALFactory.pdb
+D:\OA\OAFactory\bin\Debug\DAL.dll
+D:\OA\OAFactory\bin\Debug\IDAL.dll
+D:\OA\OAFactory\bin\Debug\Model.dll
+D:\OA\OAFactory\bin\Debug\Model.pdb
+D:\OA\OAFactory\bin\Debug\IDAL.pdb
+D:\OA\OAFactory\bin\Debug\DAL.pdb
+D:\OA\OAFactory\obj\Debug\ResolveAssemblyReference.cache
+D:\OA\OAFactory\obj\Debug\OALFactory.dll
+D:\OA\OAFactory\obj\Debug\OALFactory.pdb
